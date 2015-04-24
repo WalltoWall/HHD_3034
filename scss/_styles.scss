@@ -1,0 +1,472 @@
+body {
+  background: #e9bd7a image-url('wood_bg.jpg') no-repeat;
+  @include background-size(cover);
+  padding: rem-calc(0 0 40);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+hr {
+  border-top: 1px solid $primary-color;
+}
+
+.animsition-loading {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background: image-url("loader.png") center center no-repeat;
+  @include background-size(150px auto);
+
+  -webkit-animation-fill-mode: both;
+       -o-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.animsition-loading:after {
+  position: fixed;
+  top: 50%;
+  width: 100%;
+  margin-top: 60px;
+  font-family: $header-font-family;
+  font-size: 16px;
+  color: #aaa;
+  text-align: center;
+  content: "Loading";
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: $primary-color;
+}
+
+header#nav {
+  @include grid-row;
+  text-align: center;
+  z-index: 10;
+  h1 a {
+    display: block;
+    margin: 0 auto;
+    width: 170px;
+    height: 108px;
+    background: image-url("logo-hankshautedogs.png");
+    @include background-size(cover);
+    text-indent: -90000px;
+  }
+  ul {
+    @extend .inline-list;
+    display: inline-block;
+    margin: 0 auto;
+    list-style-type: none;
+    overflow: visible;
+    li {
+      position: relative;
+      font-size: rem-calc(20);
+      font-family: $font-family-condensed-sans;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: rem-calc(20 0);
+      margin: rem-calc(0 10);
+      &:after {
+        display: none;
+        content: " ";
+        width: 75px;
+        height: 75px;
+        background: image-url("menu_active.png");
+        @include background-size(cover);
+        position: absolute;
+        top: 0;
+        left: -15px;
+      }
+      a {
+        color: $body-font-color;
+      }
+    }
+  }
+}
+
+#intro {
+  p {
+    font-family: $font-family-condensed-sans;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: rem-calc(10);
+    line-height: 1.4;
+  }
+}
+
+footer { 
+  text-align: center;
+  margin-bottom: 40px;
+  ul {
+    @include clearfix;
+    margin: 0 auto;
+    font-family: $font-family-condensed-sans;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    list-style-type: none;
+    li strong {
+      color: $primary-color;
+    }
+  }
+}
+
+.vcard, .hours {
+  list-style-type: none;
+  border: none;
+  margin: 0 0 20px;
+  padding: 0;
+  display: block;
+}
+
+h3 {
+  color: $primary-color;
+  line-height: 1;
+  //margin-bottom: 15px;
+}
+
+[data-template="home"] {
+  header#nav ul li.home:after {
+    display: block;
+    @include transform(rotate(-48deg));
+  }
+  #sausage-slider {
+    position: relative;
+    float: none;
+    margin: 20px auto;
+    .orbit-timer {
+      display: none;
+    }
+    .sausage-orbit {
+      z-index: 2;
+    }
+    &:before {
+      content: " ";
+      background: image-url('oohlala.png') no-repeat;
+      @include background-size(cover);
+      width: 87px;
+      height: 78px;
+      display: block;
+      position: absolute;
+      top: -10px;
+      right: 10px;
+      z-index: 1;
+    }
+    &:after {
+      content: " ";
+      background: image-url('doggystyle.png') no-repeat;
+      @include background-size(cover);
+      width: 287px;
+      height: 33px;
+      display: block;
+      position: absolute;
+      bottom: -17px;
+      left: 20px;
+      z-index: 1;
+    }
+  }
+}
+
+[data-template="menu"] {
+  header#nav ul li.menu:after {
+    display: block;
+  }
+  #menu {
+    .category {
+      text-align: center;
+      margin-bottom: rem-calc(20);
+    }
+    li {
+      text-align: center;
+    }
+    li img {
+      margin-bottom: 20px;
+    }
+    p, dl, ul li {
+      font-size: rem-calc(12);
+    }
+    #sides {
+      p, dl, ul li {text-align: left;}
+      h3 {
+        font-size: rem-calc(18);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        text-align: left;
+        color: $primary-color;
+        line-height: 1;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0 0 20px 0;
+      }
+    }
+  }
+}
+
+[data-template="about"] {
+  header#nav ul li.about:after {
+    display: block;
+    @include transform(rotate(45deg));
+  }
+  #board {
+    @include panel($padding: 40px, $adjust: true);
+    background: $primary-color image-url('extra_clean_paper_@2X.gif') repeat;
+    border: 0px;
+    @include background-size(50%);
+    position: relative;
+    z-index: 0;
+    @include box-shadow(0 0 10px rgba(0,0,0,0.8));
+    h2, p {
+      color: #f2d49b;
+    }
+    p {
+      font-size: rem-calc(14);
+    }
+    &.pull-up {
+      margin-top: 60px;
+    }
+    &:before, &:after {
+      content: " ";
+      position: absolute;
+      width: 100px;
+      height: 75px;
+      background: image-url('clips.png') no-repeat;
+      @include background-size(cover);
+      z-index: 100;
+      top: -50px;
+    }
+    &:before {
+      left: 20px;
+      right: auto;
+    }
+    &:after {
+      left: auto;
+      right: 20px;
+    }
+  }
+  .pretty-embed {
+    margin-bottom: 20px;
+  }
+}
+
+[data-template="info"] {
+  header#nav ul li.info:after {
+    display: block;
+    left: -15px;
+    @include transform(rotate(-38deg));
+  }
+  .map {
+    background: image-url('napkin.png') no-repeat;
+    @include background-size(cover);
+    padding: rem-calc(30);
+  }
+  .snap {
+    border: 4px solid white;
+    margin-bottom: 10px;
+    @include box-shadow(0 0 4px rgba(0,0,0,0.5));
+    &.two {
+      border: 4px solid black;
+    }
+  }
+  h3 span {
+    font-family: $body-font-family;
+    font-size: rem-calc(11);
+    text-decoration: underline;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+}
+
+@media #{$medium-up} {
+  header#nav {
+    margin-top: -50px;
+    h1 a {
+      margin: 0;
+      float: left;
+      width: 253px;
+      height: 163px;
+      background: image-url("logo-hankshautedogs.png");
+      @include background-size(cover);
+      text-indent: -90000px;
+    }
+    ul {
+      float: right;
+      margin: rem-calc(40 40 0 0);
+      display: block;
+      li {
+        font-size: rem-calc(30);
+        &:after {
+          width: 85px;
+          height: 85px;
+          left: -10px;
+        }
+      }
+    }
+  }
+  body {
+    padding-top: rem-calc(40);
+  }
+  footer {
+    ul {
+      @include inline-list;
+      li {
+        font-size: rem-calc(14);
+        letter-spacing: 0;
+      }
+    }
+  }
+  [data-template="home"] {
+    #sausage-slider {
+      &.pull-up {
+        margin-top: 20px;
+      }
+      &:before {
+        width: 189px;
+        height: 158px;
+        top: -30px;
+        right: -30px;
+      }
+      &:after {
+        width: 517px;
+        height: 60px;
+        display: block;
+        position: absolute;
+        bottom: -23px;
+        left: 100px;
+        z-index: 2;
+      }
+    }
+    #intro p {
+      margin-top: 40px;
+      padding: rem-calc(20 15);
+    }
+  }
+  [data-template="about"] {
+    #board.pull-up {
+      margin-top: 60px;
+    }
+  }
+  [data-template="info"] {
+    #information {
+      padding: rem-calc(20 30);
+    }
+    #map {
+      margin-top: 50px;
+      @include transform(scale(0.8));
+      z-index: 0;
+      position: relative;
+      img {
+        position: absolute;
+      }
+    }
+    .map {
+      @include transform(rotate(-5deg));
+      top: 50px;
+      left: -90px;
+      z-index: 0;
+    }
+    .snap {
+      &.one {
+        max-width: 350px;
+        @include transform(rotate(-4deg));
+        top: -112px;
+        left: 200px;
+        z-index: -1;
+      }
+      &.two {
+        max-width: 357px;
+        transform: rotate(0deg);
+        top: 325px;
+        right: -40px;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+@media #{$portrait} {
+  [data-template="home"] {
+    #sausage-slider {
+      &:after {
+        left: -10px;
+      }
+    }
+  }
+}
+
+@media #{$small-only} {
+  [data-template="home"] {
+    #intro {
+      text-align: center;
+    }
+    #sausage-slider {
+      &:after {
+        left: 70px;
+      }
+    }
+  }
+}
+
+@media #{$large-up} {
+  header#nav {
+    h1 a {
+      margin: 0;
+      float: left;
+      width: 363px;
+      height: 236px;
+      background: image-url("logo-hankshautedogs.png");
+      @include background-size(cover);
+      text-indent: -90000px;
+    }
+    ul {
+      float: right;
+      margin: rem-calc(40 40 0 0);
+      display: block;
+      li {
+        font-size: rem-calc(30);
+      }
+    }
+  }
+  [data-template="home"] {
+    #sausage-slider {
+      float: left;
+      margin: auto;
+      &.pull-up {
+        margin-top: -65px;
+      }
+    }
+    #intro p {
+      margin-top: 0;
+    }
+  }
+
+  [data-template="menu"] {
+    .pull-up {
+      margin-top: -120px;
+      margin-bottom: 30px;
+    }
+  }
+  [data-template="about"] {
+    #board.pull-up {
+      margin-top: -100px;
+    }
+  }
+  [data-template="info"] {
+    #map {
+      margin-top: 0px;
+      @include transform(scale(1));
+    }
+  }
+  footer {
+    ul {
+      @include inline-list;
+      margin: 0;
+      li {
+        font-size: rem-calc(16);
+        letter-spacing: 0.1em;
+      }
+    }
+  }
+}

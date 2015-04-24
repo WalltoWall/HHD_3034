@@ -1,0 +1,44 @@
+mixin template(title, template)
+  doctype html
+  html(class="no-js" lang="en")
+    head
+      meta(charset="utf-8")
+      meta(name="viewport" content="width=device-width, initial-scale=1.0")
+      title=title || "Hank's Haute Dogs | Gourmet Hot Dogs in Honolulu, Hawaii"
+      include _favicon.jade
+      meta(property="og:title" content="Hank's Haute Dogs | Gourmet Hot Dogs in Honolulu, Hawaii")/
+      meta(property="og:site_name" content="Hank's Haute Dogs")/
+      meta(property="og:type" content="site")/
+      meta(property="og:url" content="http://www.hankshautedogs.com")/
+      meta(property="og:description" content="Hank's Haute Dogs presents a creative play on the All-American favorite of Hot Dogs in Hawaii. Well done, great ingredients and innovative thinking.")/
+      meta(property="og:image" content="http://www.hankshautedogs.com/images/fb.jpg")/
+      link(rel="stylesheet" href="stylesheets/animsition.min.css")
+      link(rel="stylesheet" href="stylesheets/app.css")
+      script(src="bower_components/modernizr/modernizr.js")
+      script(src="//use.typekit.net/lin7cib.js")
+      script try{Typekit.load();}catch(e){}
+    
+    body(data-template=template)
+      #main
+        +nav
+        
+        .animsition
+        
+          if block
+            block
+          
+          +footer
+        
+      #outdated
+      
+      script(src="bower_components/jquery/dist/jquery.min.js")
+      script(src="bower_components/foundation/js/foundation.min.js")
+      script(src="js/min/app-min.js")
+      script(type='text/javascript').
+        //- (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        //- (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
+        //- Date();a=s.createElement(o),
+        //- m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        //- })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        //- ga('create', 'UA-3227914-7', 'hankshautedogs.com');
+        //- ga('send', 'pageview');

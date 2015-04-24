@@ -1,0 +1,34 @@
+include includes/_mixin
+
++template("Hank's Haute Dogs", "info")
+  section
+    .row
+      #information.large-5.medium-5.columns
+        ul.vcard
+          li.fn: h3 Kaka‘ako
+          li.street-address 324 Coral Street
+          li.locality Honolulu, Hawaii 96813
+          li.tel (808) 532-4265
+        ul.hours
+          li: h3 Hours
+          li Open 7 Days ALOHA
+          li Monday – Thursday 10am – 4pm
+          li Friday 10am – 7pm
+          li Saturday 11am – 7pm
+          li Sunday 11am – 4pm
+        hr
+        ul.vcard
+          li.fn: h3 Sheraton Maui <span><a href="http://www.sheraton-maui.com/dining/hankshautedogs" target="_blank">Website</a></span>
+          li.street-address 2605 Ka‘anapali Parkway
+          li.locality Lahaina, Maui 96761
+          li.tel (808) 661-0031
+          li Limited Menu
+        ul.hours
+          li: h3 Hours
+          li Daily 11am – 3pm
+        h3 E-mail
+        p: a(href="mailto:office@hankshautedogs.com") office@hankshautedogs.com
+      #map.large-7.medium-7.columns
+        img.map(src="images/kakaako.png")
+        img.snap.one(src="images/info-photo01.jpg")
+        img.snap.two(src="images/info-photo02.jpg")
