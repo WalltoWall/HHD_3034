@@ -5523,6 +5523,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/HHD-Giftcard.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16050,
+		"inputAbbreviatedPath": "\/images\/HHD-Giftcard.png",
+		"outputAbbreviatedPath": "\/images\/HHD-Giftcard.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/HHD-Greek.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -5651,6 +5662,17 @@
 		"initialSize": 225262,
 		"inputAbbreviatedPath": "\/images\/HHD-polish.png",
 		"outputAbbreviatedPath": "\/images\/HHD-polish.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/HHD-TShirt.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 34417,
+		"inputAbbreviatedPath": "\/images\/HHD-TShirt.png",
+		"outputAbbreviatedPath": "\/images\/HHD-TShirt.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -5864,6 +5886,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/Merch.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21674,
+		"inputAbbreviatedPath": "\/images\/Merch.png",
+		"outputAbbreviatedPath": "\/images\/Merch.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/napkin.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -6024,6 +6057,15 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/menu.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/menu.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/menu.jade": {
 		"compileDebug": 1,
