@@ -5325,167 +5325,167 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/HHD-Alligator.png": {
+	"\/images\/hhd-alligator.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 216907,
-		"inputAbbreviatedPath": "\/images\/HHD-Alligator.png",
-		"outputAbbreviatedPath": "\/images\/HHD-Alligator.png",
+		"inputAbbreviatedPath": "\/images\/hhd-alligator.png",
+		"outputAbbreviatedPath": "\/images\/hhd-alligator.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/HHD-Andouille.png": {
+	"\/images\/hhd-andouille.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 189514,
-		"inputAbbreviatedPath": "\/images\/HHD-Andouille.png",
-		"outputAbbreviatedPath": "\/images\/HHD-Andouille.png",
+		"inputAbbreviatedPath": "\/images\/hhd-andouille.png",
+		"outputAbbreviatedPath": "\/images\/hhd-andouille.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/HHD-BeefFries.png": {
+	"\/images\/hhd-beeffries.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 204011,
-		"inputAbbreviatedPath": "\/images\/HHD-BeefFries.png",
-		"outputAbbreviatedPath": "\/images\/HHD-BeefFries.png",
+		"inputAbbreviatedPath": "\/images\/hhd-beeffries.png",
+		"outputAbbreviatedPath": "\/images\/hhd-beeffries.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/HHD-Boar.png": {
+	"\/images\/hhd-boar.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 219518,
-		"inputAbbreviatedPath": "\/images\/HHD-Boar.png",
-		"outputAbbreviatedPath": "\/images\/HHD-Boar.png",
+		"inputAbbreviatedPath": "\/images\/hhd-boar.png",
+		"outputAbbreviatedPath": "\/images\/hhd-boar.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/HHD-Brat.png": {
+	"\/images\/hhd-brat.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 195053,
-		"inputAbbreviatedPath": "\/images\/HHD-Brat.png",
-		"outputAbbreviatedPath": "\/images\/HHD-Brat.png",
+		"inputAbbreviatedPath": "\/images\/hhd-brat.png",
+		"outputAbbreviatedPath": "\/images\/hhd-brat.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/HHD-BratFrancois.png": {
+	"\/images\/hhd-bratfancois.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 191744,
-		"inputAbbreviatedPath": "\/images\/HHD-BratFrancois.png",
-		"outputAbbreviatedPath": "\/images\/HHD-BratFrancois.png",
+		"inputAbbreviatedPath": "\/images\/hhd-bratfancois.png",
+		"outputAbbreviatedPath": "\/images\/hhd-bratfancois.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/HHD-Buffalo.png": {
+	"\/images\/hhd-buffalo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 218161,
-		"inputAbbreviatedPath": "\/images\/HHD-Buffalo.png",
-		"outputAbbreviatedPath": "\/images\/HHD-Buffalo.png",
+		"inputAbbreviatedPath": "\/images\/hhd-buffalo.png",
+		"outputAbbreviatedPath": "\/images\/hhd-buffalo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/HHD-Burger.png": {
+	"\/images\/hhd-burger.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 199134,
-		"inputAbbreviatedPath": "\/images\/HHD-Burger.png",
-		"outputAbbreviatedPath": "\/images\/HHD-Burger.png",
+		"inputAbbreviatedPath": "\/images\/hhd-burger.png",
+		"outputAbbreviatedPath": "\/images\/hhd-burger.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/HHD-CheeseFries.png": {
+	"\/images\/hhd-cheesefries.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 160103,
-		"inputAbbreviatedPath": "\/images\/HHD-CheeseFries.png",
-		"outputAbbreviatedPath": "\/images\/HHD-CheeseFries.png",
+		"inputAbbreviatedPath": "\/images\/hhd-cheesefries.png",
+		"outputAbbreviatedPath": "\/images\/hhd-cheesefries.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/HHD-Chicago.png": {
+	"\/images\/hhd-chicago.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 221770,
-		"inputAbbreviatedPath": "\/images\/HHD-Chicago.png",
-		"outputAbbreviatedPath": "\/images\/HHD-Chicago.png",
+		"inputAbbreviatedPath": "\/images\/hhd-chicago.png",
+		"outputAbbreviatedPath": "\/images\/hhd-chicago.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/HHD-Chicken.png": {
+	"\/images\/hhd-chicken.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 204893,
-		"inputAbbreviatedPath": "\/images\/HHD-Chicken.png",
-		"outputAbbreviatedPath": "\/images\/HHD-Chicken.png",
+		"inputAbbreviatedPath": "\/images\/hhd-chicken.png",
+		"outputAbbreviatedPath": "\/images\/hhd-chicken.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/HHD-ChiliDog.png": {
+	"\/images\/hhd-chilidog.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 182578,
-		"inputAbbreviatedPath": "\/images\/HHD-ChiliDog.png",
-		"outputAbbreviatedPath": "\/images\/HHD-ChiliDog.png",
+		"inputAbbreviatedPath": "\/images\/hhd-chilidog.png",
+		"outputAbbreviatedPath": "\/images\/hhd-chilidog.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/HHD-Chorizo.png": {
+	"\/images\/hhd-chorizo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 233192,
-		"inputAbbreviatedPath": "\/images\/HHD-Chorizo.png",
-		"outputAbbreviatedPath": "\/images\/HHD-Chorizo.png",
+		"inputAbbreviatedPath": "\/images\/hhd-chorizo.png",
+		"outputAbbreviatedPath": "\/images\/hhd-chorizo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/HHD-CremeBrulee.png": {
+	"\/images\/hhd-cremebrulee.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 152087,
-		"inputAbbreviatedPath": "\/images\/HHD-CremeBrulee.png",
-		"outputAbbreviatedPath": "\/images\/HHD-CremeBrulee.png",
+		"inputAbbreviatedPath": "\/images\/hhd-cremebrulee.png",
+		"outputAbbreviatedPath": "\/images\/hhd-cremebrulee.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/HHD-DippigSauce.png": {
+	"\/images\/hhd-dippingsauce.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 118925,
-		"inputAbbreviatedPath": "\/images\/HHD-DippigSauce.png",
-		"outputAbbreviatedPath": "\/images\/HHD-DippigSauce.png",
+		"inputAbbreviatedPath": "\/images\/hhd-dippingsauce.png",
+		"outputAbbreviatedPath": "\/images\/hhd-dippingsauce.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -5523,13 +5523,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/HHD-Giftcard.png": {
+	"\/images\/hhd-giftcard.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 16050,
-		"inputAbbreviatedPath": "\/images\/HHD-Giftcard.png",
-		"outputAbbreviatedPath": "\/images\/HHD-Giftcard.png",
+		"inputAbbreviatedPath": "\/images\/hhd-giftcard.png",
+		"outputAbbreviatedPath": "\/images\/hhd-giftcard.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -5666,13 +5666,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/HHD-TShirt.png": {
+	"\/images\/hhd-tshirt.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 34417,
-		"inputAbbreviatedPath": "\/images\/HHD-TShirt.png",
-		"outputAbbreviatedPath": "\/images\/HHD-TShirt.png",
+		"inputAbbreviatedPath": "\/images\/hhd-tshirt.png",
+		"outputAbbreviatedPath": "\/images\/hhd-tshirt.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -5886,13 +5886,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/Merch.png": {
+	"\/images\/merch.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 21674,
-		"inputAbbreviatedPath": "\/images\/Merch.png",
-		"outputAbbreviatedPath": "\/images\/Merch.png",
+		"inputAbbreviatedPath": "\/images\/merch.png",
+		"outputAbbreviatedPath": "\/images\/merch.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -6057,6 +6057,15 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/menu.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/menu.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/menu.jade": {
 		"compileDebug": 1,
