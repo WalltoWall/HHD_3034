@@ -5710,6 +5710,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/large_andouille.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 363622,
+		"inputAbbreviatedPath": "\/images\/large_andouille.png",
+		"outputAbbreviatedPath": "\/images\/large_andouille.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/large_andoullie.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -5725,7 +5736,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 91801,
+		"initialSize": 356334,
 		"inputAbbreviatedPath": "\/images\/large_brat.png",
 		"outputAbbreviatedPath": "\/images\/large_brat.png",
 		"outputPathIsOutsideProject": 0,
@@ -5736,7 +5747,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 80245,
+		"initialSize": 409072,
 		"inputAbbreviatedPath": "\/images\/large_chicago.png",
 		"outputAbbreviatedPath": "\/images\/large_chicago.png",
 		"outputPathIsOutsideProject": 0,
@@ -5765,6 +5776,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/large_chilidog.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 370142,
+		"inputAbbreviatedPath": "\/images\/large_chilidog.png",
+		"outputAbbreviatedPath": "\/images\/large_chilidog.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/large_chorizo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -5772,6 +5794,28 @@
 		"initialSize": 84289,
 		"inputAbbreviatedPath": "\/images\/large_chorizo.png",
 		"outputAbbreviatedPath": "\/images\/large_chorizo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/large_hanksfrank.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 342303,
+		"inputAbbreviatedPath": "\/images\/large_hanksfrank.png",
+		"outputAbbreviatedPath": "\/images\/large_hanksfrank.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/large_hawaiian.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 353931,
+		"inputAbbreviatedPath": "\/images\/large_hawaiian.png",
+		"outputAbbreviatedPath": "\/images\/large_hawaiian.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -5995,15 +6039,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
-		},
-	"\/index.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/index.jade": {
 		"compileDebug": 1,
