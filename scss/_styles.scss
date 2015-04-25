@@ -179,7 +179,7 @@ h3 {
       margin-bottom: rem-calc(20);
     }
     li {
-      text-align: center;
+      text-align: left;
     }
     li img {
       margin-bottom: 20px;
@@ -335,7 +335,7 @@ h3 {
         position: absolute;
         bottom: -23px;
         left: 100px;
-        z-index: 2;
+        z-index: 1;
       }
     }
     #intro p {
