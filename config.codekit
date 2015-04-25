@@ -5424,13 +5424,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/hhd-chicago.png": {
+	"\/images\/HHD-Chicago.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 221770,
-		"inputAbbreviatedPath": "\/images\/hhd-chicago.png",
-		"outputAbbreviatedPath": "\/images\/hhd-chicago.png",
+		"inputAbbreviatedPath": "\/images\/HHD-Chicago.png",
+		"outputAbbreviatedPath": "\/images\/HHD-Chicago.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -5446,13 +5446,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/hhd-chilidog.png": {
+	"\/images\/HHD-ChiliDog.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 182578,
-		"inputAbbreviatedPath": "\/images\/hhd-chilidog.png",
-		"outputAbbreviatedPath": "\/images\/hhd-chilidog.png",
+		"inputAbbreviatedPath": "\/images\/HHD-ChiliDog.png",
+		"outputAbbreviatedPath": "\/images\/HHD-ChiliDog.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -5567,13 +5567,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/hhd-italianbeef.png": {
+	"\/images\/HHD-ItalianBeef.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 218664,
-		"inputAbbreviatedPath": "\/images\/hhd-italianbeef.png",
-		"outputAbbreviatedPath": "\/images\/hhd-italianbeef.png",
+		"inputAbbreviatedPath": "\/images\/HHD-ItalianBeef.png",
+		"outputAbbreviatedPath": "\/images\/HHD-ItalianBeef.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -6057,15 +6057,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
-		},
-	"\/menu.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/menu.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/menu.jade": {
 		"compileDebug": 1,
