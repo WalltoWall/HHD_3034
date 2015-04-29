@@ -5754,6 +5754,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/large_chicken.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 414486,
+		"inputAbbreviatedPath": "\/images\/large_chicken.png",
+		"outputAbbreviatedPath": "\/images\/large_chicken.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/large_chili.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -5776,6 +5787,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/large_chorizo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 361570,
+		"inputAbbreviatedPath": "\/images\/large_chorizo.png",
+		"outputAbbreviatedPath": "\/images\/large_chorizo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/large_hanksfrank.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -5794,6 +5816,28 @@
 		"initialSize": 353931,
 		"inputAbbreviatedPath": "\/images\/large_hawaiian.png",
 		"outputAbbreviatedPath": "\/images\/large_hawaiian.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/large_nodog.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 409116,
+		"inputAbbreviatedPath": "\/images\/large_nodog.png",
+		"outputAbbreviatedPath": "\/images\/large_nodog.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/large_polish.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 416816,
+		"inputAbbreviatedPath": "\/images\/large_polish.png",
+		"outputAbbreviatedPath": "\/images\/large_polish.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -5995,15 +6039,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
-		},
-	"\/index.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/index.jade": {
 		"compileDebug": 1,
