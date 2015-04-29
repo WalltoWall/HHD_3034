@@ -9,6 +9,8 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.1em;
 }
 
+
+
 hr {
   border-top: 1px solid $primary-color;
 }
@@ -244,6 +246,14 @@ h3 {
     &:after {
       left: auto;
       right: 20px;
+    }
+    h5 {
+      color: $white;
+      text-align: center;
+    }
+    video {
+      width: 100%;
+      height: auto;
     }
   }
   .pretty-embed {
