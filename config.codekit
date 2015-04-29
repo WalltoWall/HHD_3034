@@ -5424,13 +5424,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/HHD-Chicago.png": {
+	"\/images\/hhd-chicago.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 221770,
-		"inputAbbreviatedPath": "\/images\/HHD-Chicago.png",
-		"outputAbbreviatedPath": "\/images\/HHD-Chicago.png",
+		"inputAbbreviatedPath": "\/images\/hhd-chicago.png",
+		"outputAbbreviatedPath": "\/images\/hhd-chicago.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -5446,13 +5446,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/HHD-ChiliDog.png": {
+	"\/images\/hhd-chilidog.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 182578,
-		"inputAbbreviatedPath": "\/images\/HHD-ChiliDog.png",
-		"outputAbbreviatedPath": "\/images\/HHD-ChiliDog.png",
+		"inputAbbreviatedPath": "\/images\/hhd-chilidog.png",
+		"outputAbbreviatedPath": "\/images\/hhd-chilidog.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -5567,13 +5567,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/HHD-ItalianBeef.png": {
+	"\/images\/hhd-italianbeef.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 218664,
-		"inputAbbreviatedPath": "\/images\/HHD-ItalianBeef.png",
-		"outputAbbreviatedPath": "\/images\/HHD-ItalianBeef.png",
+		"inputAbbreviatedPath": "\/images\/hhd-italianbeef.png",
+		"outputAbbreviatedPath": "\/images\/hhd-italianbeef.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -5754,17 +5754,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/large_chicken.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 84982,
-		"inputAbbreviatedPath": "\/images\/large_chicken.png",
-		"outputAbbreviatedPath": "\/images\/large_chicken.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/large_chili.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -5787,17 +5776,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/large_chorizo.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 84289,
-		"inputAbbreviatedPath": "\/images\/large_chorizo.png",
-		"outputAbbreviatedPath": "\/images\/large_chorizo.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/large_hanksfrank.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -5816,28 +5794,6 @@
 		"initialSize": 353931,
 		"inputAbbreviatedPath": "\/images\/large_hawaiian.png",
 		"outputAbbreviatedPath": "\/images\/large_hawaiian.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/large_noDog.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 86162,
-		"inputAbbreviatedPath": "\/images\/large_noDog.png",
-		"outputAbbreviatedPath": "\/images\/large_noDog.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/large_polish.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 98883,
-		"inputAbbreviatedPath": "\/images\/large_polish.png",
-		"outputAbbreviatedPath": "\/images\/large_polish.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -6039,6 +5995,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
+		},
+	"\/index.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/index.jade": {
 		"compileDebug": 1,
