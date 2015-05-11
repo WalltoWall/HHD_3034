@@ -319,21 +319,6 @@ h3 {
   body {
     padding-top: rem-calc(40);
   }
-  footer {
-    ul {
-      display: inline-block;
-      @include inline-list;
-      margin-right: rem-calc(10);
-      li {
-        letter-spacing: 0.1;
-        font-size: rem-calc(13);
-        margin-left: rem-calc(10);
-        &:last-child {
-          margin-right: rem-calc(15);
-        }
-      }
-    }
-  }
   [data-template="home"] {
     #sausage-slider {
       &.pull-up {
@@ -408,13 +393,32 @@ h3 {
     }
     .sheraton {
       img {
-        @include transform(scale(1.1) rotate(4deg) translate(-20px, -20px));
+        @include grid-column(5, $push: 7);
+        @include transform(scale(1.2) rotate(4deg) translate(-20px, -20px));
       }
-      img, .sheraton-info {@include grid-column(6);}
+      .sheraton-info {
+        margin-top: rem-calc(40);
+        @include grid-column(7, $pull: 5);
+      }
       .sheraton-info {
         ul.vcard {@include grid-column(7);}
         ul.hours {@include grid-column(5);}
         .email {@include grid-column(12);}
+      }
+    }
+  }
+  footer {
+    ul {
+      display: inline-block;
+      @include inline-list;
+      margin-right: rem-calc(10);
+      li {
+        letter-spacing: 0.1;
+        font-size: rem-calc(13);
+        margin-left: rem-calc(10);
+        &:last-child {
+          margin-right: rem-calc(15);
+        }
       }
     }
   }
@@ -439,6 +443,21 @@ h3 {
       &:after {
         left: 70px;
       }
+    }
+  }
+  footer {
+    background: darken($body-bg, 5%);
+    padding: rem-calc(40 0);
+    margin: 0;
+    a {
+      // color: $secondary-color;
+    }
+  }
+  #information {
+    text-align: center;
+    img {
+      margin-bottom: rem-calc(30);
+      max-width: 300px;
     }
   }
 }
@@ -488,7 +507,7 @@ h3 {
     }
   }
   [data-template="info"] {
-    li {
+    #information li {
       font-size: rem-calc(16);
     }
     .snaps img {
