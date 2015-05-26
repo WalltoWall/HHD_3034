@@ -3687,6 +3687,10 @@ header#nav {
       header#nav ul li a {
         color: #584D4D; }
 
+.social {
+  width: 30px;
+  padding: 0px; }
+
 #intro p {
   font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
