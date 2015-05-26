@@ -86,11 +86,16 @@ header#nav {
       }
     }
   }
-}
-
-.social {
-  width: 30px;
-  padding: 0px;
+  ul.social {
+    @include clearfix;
+    display: inline-block;
+    li {
+      float: left;
+      width: 30px;
+      padding: 0px;
+      display: block;
+    }
+  }
 }
 
 #intro {
@@ -298,6 +303,7 @@ h3 {
 @media #{$medium-up} {
   header#nav {
     margin-top: -50px;
+    position: relative;
     h1 a {
       margin: 0;
       float: left;
@@ -319,6 +325,11 @@ h3 {
           left: -10px;
         }
       }
+    }
+    ul.social {
+      position: absolute;
+      top: -24px;
+      right: 0;
     }
   }
   body {

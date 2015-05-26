@@ -3590,7 +3590,7 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 body {
-  background: #e9bd7a url('../images/wood_bg.jpg?1432323661') no-repeat;
+  background: #e9bd7a url('../images/wood_bg.jpg?1430385718') no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -3610,7 +3610,7 @@ hr {
   z-index: 100;
   width: 100%;
   height: 100%;
-  background: url('../images/loader.png?1432323661') center center no-repeat;
+  background: url('../images/loader.png?1430385718') center center no-repeat;
   -moz-background-size: 150px auto;
   -o-background-size: 150px auto;
   -webkit-background-size: 150px auto;
@@ -3652,7 +3652,7 @@ header#nav {
     margin: 0 auto;
     width: 170px;
     height: 108px;
-    background: url('../images/logo-hankshautedogs.png?1432323661');
+    background: url('../images/logo-hankshautedogs.png?1430385718');
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
@@ -3676,7 +3676,7 @@ header#nav {
         content: " ";
         width: 75px;
         height: 75px;
-        background: url('../images/menu_active.png?1432323661');
+        background: url('../images/menu_active.png?1430385718');
         -moz-background-size: cover;
         -o-background-size: cover;
         -webkit-background-size: cover;
@@ -3686,10 +3686,18 @@ header#nav {
         left: -15px; }
       header#nav ul li a {
         color: #584D4D; }
-
-.social {
-  width: 30px;
-  padding: 0px; }
+  header#nav ul.social {
+    display: inline-block; }
+    header#nav ul.social:before, header#nav ul.social:after {
+      content: " ";
+      display: table; }
+    header#nav ul.social:after {
+      clear: both; }
+    header#nav ul.social li {
+      float: left;
+      width: 30px;
+      padding: 0px;
+      display: block; }
 
 #intro p {
   font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif;
@@ -3743,7 +3751,7 @@ h3 {
     z-index: 2; }
   [data-template="home"] #sausage-slider:before {
     content: " ";
-    background: url('../images/oohlala.png?1432323661') no-repeat;
+    background: url('../images/oohlala.png?1430385718') no-repeat;
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
@@ -3757,7 +3765,7 @@ h3 {
     z-index: 1; }
   [data-template="home"] #sausage-slider:after {
     content: " ";
-    background: url('../images/doggystyle.png?1432323661') no-repeat;
+    background: url('../images/doggystyle.png?1430385718') no-repeat;
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
@@ -3808,7 +3816,7 @@ h3 {
   padding: 40px;
   background: #f2f2f2;
   color: #333333;
-  background: #B7260D url('../images/extra_clean_paper_@2X.gif?1429905239') repeat;
+  background: #B7260D url('../images/extra_clean_paper_@2X.gif?1428119104') repeat;
   border: 0px;
   -moz-background-size: 50%;
   -o-background-size: 50%;
@@ -3841,7 +3849,7 @@ h3 {
     position: absolute;
     width: 100px;
     height: 75px;
-    background: url('../images/clips.png?1432323661') no-repeat;
+    background: url('../images/clips.png?1430385718') no-repeat;
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
@@ -3891,13 +3899,14 @@ h3 {
 
 @media only screen and (min-width: 40.063em) {
   header#nav {
-    margin-top: -50px; }
+    margin-top: -50px;
+    position: relative; }
     header#nav h1 a {
       margin: 0;
       float: left;
       width: 253px;
       height: 163px;
-      background: url('../images/logo-hankshautedogs.png?1432323661');
+      background: url('../images/logo-hankshautedogs.png?1430385718');
       -moz-background-size: cover;
       -o-background-size: cover;
       -webkit-background-size: cover;
@@ -3913,6 +3922,10 @@ h3 {
           width: 85px;
           height: 85px;
           left: -10px; }
+    header#nav ul.social {
+      position: absolute;
+      top: -24px;
+      right: 0; }
 
   body {
     padding-top: 2.5rem; }
@@ -4094,7 +4107,7 @@ h3 {
     float: left;
     width: 363px;
     height: 236px;
-    background: url('../images/logo-hankshautedogs.png?1432323661');
+    background: url('../images/logo-hankshautedogs.png?1430385718');
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
