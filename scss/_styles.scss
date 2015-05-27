@@ -9,16 +9,16 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.1em;
 }
 
-
-
 hr {
   border-top: 1px solid $primary-color;
 }
+
 #google_translate_element {
   max-width: 150px;
   margin: 0 auto;
   @include transform(translateX(-92px));
 }
+
 .animsition-loading {
   position: fixed;
   top: 0;
@@ -305,6 +305,11 @@ h3 {
   }
 }
 
+.mailinglist, .tiny.button {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
 @media #{$medium-up} {
   header#nav {
     margin-top: -50px;
@@ -443,6 +448,9 @@ h3 {
         }
       }
     }
+  }
+  .mailinglist {
+    margin-left: 15px;
   }
 }
 
