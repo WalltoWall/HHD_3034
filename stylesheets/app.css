@@ -3604,6 +3604,14 @@ h1, h2, h3, h4, h5, h6 {
 hr {
   border-top: 1px solid #B7260D; }
 
+#google_translate_element {
+  max-width: 150px;
+  margin: 0 auto;
+  -moz-transform: translateX(-92px);
+  -ms-transform: translateX(-92px);
+  -webkit-transform: translateX(-92px);
+  transform: translateX(-92px); }
+
 .animsition-loading {
   position: fixed;
   top: 0;
@@ -3689,6 +3697,18 @@ header#nav {
 
 .social {
   width: 30px; }
+  .social ul.social {
+    display: inline-block; }
+    .social ul.social:before, .social ul.social:after {
+      content: " ";
+      display: table; }
+    .social ul.social:after {
+      clear: both; }
+    .social ul.social li {
+      float: left;
+      width: 30px;
+      padding: 0px;
+      display: block; }
 
 #intro p {
   font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif;
@@ -3890,7 +3910,8 @@ h3 {
 
 @media only screen and (min-width: 40.063em) {
   header#nav {
-    margin-top: -50px; }
+    margin-top: -50px;
+    position: relative; }
     header#nav h1 a {
       margin: 0;
       float: left;
@@ -3912,6 +3933,10 @@ h3 {
           width: 85px;
           height: 85px;
           left: -10px; }
+    header#nav ul.social {
+      position: absolute;
+      top: -24px;
+      right: 0; }
 
   body {
     padding-top: 2.5rem; }
