@@ -9,10 +9,16 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.1em;
 }
 
+
+
 hr {
   border-top: 1px solid $primary-color;
 }
-
+#google_translate_element {
+  max-width: 150px;
+  margin: 0 auto;
+  @include transform(translateX(-92px));
+}
 .animsition-loading {
   position: fixed;
   top: 0;
@@ -84,7 +90,18 @@ header#nav {
       }
     }
   }
+  ul.social {
+    @include clearfix;
+    display: inline-block;
+    li {
+      float: left;
+      width: 30px;
+      padding: 0px;
+      display: block;
+    }
+  }
 }
+
 
 #intro {
   p {
@@ -245,6 +262,14 @@ h3 {
       left: auto;
       right: 20px;
     }
+    h5 {
+      color: $white;
+      text-align: center;
+    }
+    video {
+      width: 100%;
+      height: auto;
+    }
   }
   .pretty-embed {
     margin-bottom: 20px;
@@ -257,10 +282,11 @@ h3 {
     left: -15px;
     @include transform(rotate(-38deg));
   }
-  .map {
-    background: image-url('napkin.png') no-repeat;
-    @include background-size(cover);
+  #information {
     padding: rem-calc(30);
+    .kakaako {
+      margin-bottom: rem-calc(40);
+    }
   }
   .snap {
     border: 4px solid white;
@@ -282,6 +308,7 @@ h3 {
 @media #{$medium-up} {
   header#nav {
     margin-top: -50px;
+    position: relative;
     h1 a {
       margin: 0;
       float: left;
@@ -304,18 +331,14 @@ h3 {
         }
       }
     }
+    ul.social {
+      position: absolute;
+      top: -24px;
+      right: 0;
+    }
   }
   body {
     padding-top: rem-calc(40);
-  }
-  footer {
-    ul {
-      @include inline-list;
-      li {
-        font-size: rem-calc(14);
-        letter-spacing: 0;
-      }
-    }
   }
   [data-template="home"] {
     #sausage-slider {
@@ -349,38 +372,75 @@ h3 {
     }
   }
   [data-template="info"] {
-    #information {
-      padding: rem-calc(20 30);
+    li {
+      font-size: rem-calc(13);
     }
-    #map {
-      margin-top: 50px;
-      @include transform(scale(0.8));
-      z-index: 0;
-      position: relative;
+    .snaps {
+      @include grid-column(8, $push: 4);
       img {
-        position: absolute;
+        width: 45%;
+        float: right;
+        // max-height: 180px;
+        margin: rem-calc(0 5);
+        margin-top: -50px;
+        &:first-child {
+          @include transform(rotate(4deg));
+        }
+        &:last-child {
+          @include transform(rotate(-4deg));
+        }
       }
     }
-    .map {
-      @include transform(rotate(-5deg));
-      top: 50px;
-      left: -90px;
-      z-index: 0;
+    .kakaako, .sheraton {
+      @include grid-row;
     }
-    .snap {
-      &.one {
-        max-width: 350px;
-        @include transform(rotate(-4deg));
-        top: -112px;
-        left: 200px;
-        z-index: -1;
+    .kakaako {
+      img {
+        @include transform(scale(1.2) rotate(-4deg));
       }
-      &.two {
-        max-width: 357px;
-        transform: rotate(0deg);
-        top: 325px;
-        right: -40px;
-        z-index: -1;
+      img {@include grid-column(5);}
+      .kakaako-info {
+        @include grid-column(7);
+        ul {
+          margin-top: rem-calc(70);
+          &:first-child {@include grid-column(5);}
+          &:last-child {@include grid-column(7);}
+        }
+      }
+
+      ul {
+        margin-top: rem-calc(30);
+      }
+    }
+    .sheraton {
+      img {
+        @include grid-column(5, $push: 7);
+        @include transform(scale(1.2) rotate(4deg) translate(-20px, -20px));
+      }
+      .sheraton-info {
+        margin-top: rem-calc(40);
+        @include grid-column(7, $pull: 5);
+      }
+      .sheraton-info {
+        ul.vcard {@include grid-column(7);}
+        ul.hours {@include grid-column(5);}
+        .email {@include grid-column(12);}
+        .job {@include grid-column(7);}
+      }
+    }
+  }
+  footer {
+    ul {
+      display: inline-block;
+      @include inline-list;
+      margin-right: rem-calc(10);
+      li {
+        letter-spacing: 0.1;
+        font-size: rem-calc(13);
+        margin-left: rem-calc(10);
+        &:last-child {
+          margin-right: rem-calc(15);
+        }
       }
     }
   }
@@ -405,6 +465,21 @@ h3 {
       &:after {
         left: 70px;
       }
+    }
+  }
+  footer {
+    background: darken($body-bg, 5%);
+    padding: rem-calc(40 0);
+    margin: 0;
+    a {
+      // color: $secondary-color;
+    }
+  }
+  #information {
+    text-align: center;
+    img {
+      margin-bottom: rem-calc(30);
+      max-width: 300px;
     }
   }
 }
@@ -454,19 +529,11 @@ h3 {
     }
   }
   [data-template="info"] {
-    #map {
-      margin-top: 0px;
-      @include transform(scale(1));
+    #information li {
+      font-size: rem-calc(16);
     }
-  }
-  footer {
-    ul {
-      @include inline-list;
-      margin: 0;
-      li {
-        font-size: rem-calc(16);
-        letter-spacing: 0.1em;
-      }
+    .snaps img {
+      margin-top: -120px;
     }
   }
 }

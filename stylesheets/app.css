@@ -55,7 +55,7 @@ body {
   font-size: 16px; }
 
 body {
-  background: #f5e0ba;
+  background: #D4AA6B;
   color: #584D4D;
   padding: 0;
   margin: 0;
@@ -3590,7 +3590,7 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 body {
-  background: #e9bd7a url('../images/wood_bg.jpg?1429905239') no-repeat;
+  background: #e9bd7a url('../images/wood_bg.jpg?1430385718') no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -3604,13 +3604,21 @@ h1, h2, h3, h4, h5, h6 {
 hr {
   border-top: 1px solid #B7260D; }
 
+#google_translate_element {
+  max-width: 150px;
+  margin: 0 auto;
+  -moz-transform: translateX(-92px);
+  -ms-transform: translateX(-92px);
+  -webkit-transform: translateX(-92px);
+  transform: translateX(-92px); }
+
 .animsition-loading {
   position: fixed;
   top: 0;
   z-index: 100;
   width: 100%;
   height: 100%;
-  background: url('../images/loader.png?1429905239') center center no-repeat;
+  background: url('../images/loader.png?1430385718') center center no-repeat;
   -moz-background-size: 150px auto;
   -o-background-size: 150px auto;
   -webkit-background-size: 150px auto;
@@ -3652,7 +3660,7 @@ header#nav {
     margin: 0 auto;
     width: 170px;
     height: 108px;
-    background: url('../images/logo-hankshautedogs.png?1429905239');
+    background: url('../images/logo-hankshautedogs.png?1430385718');
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
@@ -3676,7 +3684,7 @@ header#nav {
         content: " ";
         width: 75px;
         height: 75px;
-        background: url('../images/menu_active.png?1429905239');
+        background: url('../images/menu_active.png?1430385718');
         -moz-background-size: cover;
         -o-background-size: cover;
         -webkit-background-size: cover;
@@ -3686,6 +3694,18 @@ header#nav {
         left: -15px; }
       header#nav ul li a {
         color: #584D4D; }
+  header#nav ul.social {
+    display: inline-block; }
+    header#nav ul.social:before, header#nav ul.social:after {
+      content: " ";
+      display: table; }
+    header#nav ul.social:after {
+      clear: both; }
+    header#nav ul.social li {
+      float: left;
+      width: 30px;
+      padding: 0px;
+      display: block; }
 
 #intro p {
   font-family: "alternate-gothic-no-3-d", Helvetica, Arial, sans-serif;
@@ -3739,7 +3759,7 @@ h3 {
     z-index: 2; }
   [data-template="home"] #sausage-slider:before {
     content: " ";
-    background: url('../images/oohlala.png?1429905239') no-repeat;
+    background: url('../images/oohlala.png?1430385718') no-repeat;
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
@@ -3753,7 +3773,7 @@ h3 {
     z-index: 1; }
   [data-template="home"] #sausage-slider:after {
     content: " ";
-    background: url('../images/doggystyle.png?1429905239') no-repeat;
+    background: url('../images/doggystyle.png?1430385718') no-repeat;
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
@@ -3804,7 +3824,7 @@ h3 {
   padding: 40px;
   background: #f2f2f2;
   color: #333333;
-  background: #B7260D url('../images/extra_clean_paper_@2X.gif?1429905239') repeat;
+  background: #B7260D url('../images/extra_clean_paper_@2X.gif?1428119104') repeat;
   border: 0px;
   -moz-background-size: 50%;
   -o-background-size: 50%;
@@ -3837,7 +3857,7 @@ h3 {
     position: absolute;
     width: 100px;
     height: 75px;
-    background: url('../images/clips.png?1429905239') no-repeat;
+    background: url('../images/clips.png?1430385718') no-repeat;
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
@@ -3850,6 +3870,12 @@ h3 {
   [data-template="about"] #board:after {
     left: auto;
     right: 20px; }
+  [data-template="about"] #board h5 {
+    color: #FFFFFF;
+    text-align: center; }
+  [data-template="about"] #board video {
+    width: 100%;
+    height: auto; }
 [data-template="about"] .pretty-embed {
   margin-bottom: 20px; }
 
@@ -3860,13 +3886,10 @@ h3 {
   -ms-transform: rotate(-38deg);
   -webkit-transform: rotate(-38deg);
   transform: rotate(-38deg); }
-[data-template="info"] .map {
-  background: url('../images/napkin.png?1429905239') no-repeat;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
+[data-template="info"] #information {
   padding: 1.875rem; }
+  [data-template="info"] #information .kakaako {
+    margin-bottom: 2.5rem; }
 [data-template="info"] .snap {
   border: 4px solid white;
   margin-bottom: 10px;
@@ -3884,13 +3907,14 @@ h3 {
 
 @media only screen and (min-width: 40.063em) {
   header#nav {
-    margin-top: -50px; }
+    margin-top: -50px;
+    position: relative; }
     header#nav h1 a {
       margin: 0;
       float: left;
       width: 253px;
       height: 163px;
-      background: url('../images/logo-hankshautedogs.png?1429905239');
+      background: url('../images/logo-hankshautedogs.png?1430385718');
       -moz-background-size: cover;
       -o-background-size: cover;
       -webkit-background-size: cover;
@@ -3906,27 +3930,13 @@ h3 {
           width: 85px;
           height: 85px;
           left: -10px; }
+    header#nav ul.social {
+      position: absolute;
+      top: -24px;
+      right: 0; }
 
   body {
     padding-top: 2.5rem; }
-
-  footer ul {
-    margin: 0 auto 1.0625rem auto;
-    margin-left: -1.375rem;
-    margin-right: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden; }
-    footer ul > li {
-      list-style: none;
-      float: left;
-      margin-left: 1.375rem;
-      display: block; }
-      footer ul > li > * {
-        display: block; }
-    footer ul li {
-      font-size: 0.875rem;
-      letter-spacing: 0; }
 
   [data-template="home"] #sausage-slider.pull-up {
     margin-top: 20px; }
@@ -3950,41 +3960,136 @@ h3 {
   [data-template="about"] #board.pull-up {
     margin-top: 60px; }
 
-  [data-template="info"] #information {
-    padding: 1.25rem 1.875rem; }
-  [data-template="info"] #map {
-    margin-top: 50px;
-    -moz-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
-    z-index: 0;
-    position: relative; }
-    [data-template="info"] #map img {
-      position: absolute; }
-  [data-template="info"] .map {
-    -moz-transform: rotate(-5deg);
-    -ms-transform: rotate(-5deg);
-    -webkit-transform: rotate(-5deg);
-    transform: rotate(-5deg);
-    top: 50px;
-    left: -90px;
-    z-index: 0; }
-  [data-template="info"] .snap.one {
-    max-width: 350px;
-    -moz-transform: rotate(-4deg);
-    -ms-transform: rotate(-4deg);
-    -webkit-transform: rotate(-4deg);
-    transform: rotate(-4deg);
-    top: -112px;
-    left: 200px;
-    z-index: -1; }
-  [data-template="info"] .snap.two {
-    max-width: 357px;
-    transform: rotate(0deg);
-    top: 325px;
-    right: -40px;
-    z-index: -1; } }
+  [data-template="info"] li {
+    font-size: 0.8125rem; }
+  [data-template="info"] .snaps {
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 66.66667%;
+    left: 33.33333%;
+    right: auto;
+    float: left; }
+    [data-template="info"] .snaps img {
+      width: 45%;
+      float: right;
+      margin: 0 0.3125rem;
+      margin-top: -50px; }
+      [data-template="info"] .snaps img:first-child {
+        -moz-transform: rotate(4deg);
+        -ms-transform: rotate(4deg);
+        -webkit-transform: rotate(4deg);
+        transform: rotate(4deg); }
+      [data-template="info"] .snaps img:last-child {
+        -moz-transform: rotate(-4deg);
+        -ms-transform: rotate(-4deg);
+        -webkit-transform: rotate(-4deg);
+        transform: rotate(-4deg); }
+  [data-template="info"] .kakaako, [data-template="info"] .sheraton {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 60rem; }
+    [data-template="info"] .kakaako:before, [data-template="info"] .kakaako:after, [data-template="info"] .sheraton:before, [data-template="info"] .sheraton:after {
+      content: " ";
+      display: table; }
+    [data-template="info"] .kakaako:after, [data-template="info"] .sheraton:after {
+      clear: both; }
+  [data-template="info"] .kakaako img {
+    -moz-transform: scale(1.2) rotate(-4deg);
+    -ms-transform: scale(1.2) rotate(-4deg);
+    -webkit-transform: scale(1.2) rotate(-4deg);
+    transform: scale(1.2) rotate(-4deg); }
+  [data-template="info"] .kakaako img {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 41.66667%;
+    float: left; }
+  [data-template="info"] .kakaako .kakaako-info {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 58.33333%;
+    float: left; }
+    [data-template="info"] .kakaako .kakaako-info ul {
+      margin-top: 4.375rem; }
+      [data-template="info"] .kakaako .kakaako-info ul:first-child {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem;
+        width: 41.66667%;
+        float: left; }
+      [data-template="info"] .kakaako .kakaako-info ul:last-child {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem;
+        width: 58.33333%;
+        float: left; }
+  [data-template="info"] .kakaako ul {
+    margin-top: 1.875rem; }
+  [data-template="info"] .sheraton img {
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 41.66667%;
+    left: 58.33333%;
+    right: auto;
+    float: left;
+    -moz-transform: scale(1.2) rotate(4deg) translate(-20px, -20px);
+    -ms-transform: scale(1.2) rotate(4deg) translate(-20px, -20px);
+    -webkit-transform: scale(1.2) rotate(4deg) translate(-20px, -20px);
+    transform: scale(1.2) rotate(4deg) translate(-20px, -20px); }
+  [data-template="info"] .sheraton .sheraton-info {
+    margin-top: 2.5rem;
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 58.33333%;
+    right: 41.66667%;
+    left: auto;
+    float: left; }
+  [data-template="info"] .sheraton .sheraton-info ul.vcard {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 58.33333%;
+    float: left; }
+  [data-template="info"] .sheraton .sheraton-info ul.hours {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 41.66667%;
+    float: left; }
+  [data-template="info"] .sheraton .sheraton-info .email {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left; }
+  [data-template="info"] .sheraton .sheraton-info .job {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 58.33333%;
+    float: left; }
+
+  footer ul {
+    display: inline-block;
+    margin: 0 auto 1.0625rem auto;
+    margin-left: -1.375rem;
+    margin-right: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    margin-right: 0.625rem; }
+    footer ul > li {
+      list-style: none;
+      float: left;
+      margin-left: 1.375rem;
+      display: block; }
+      footer ul > li > * {
+        display: block; }
+    footer ul li {
+      letter-spacing: 0.1;
+      font-size: 0.8125rem;
+      margin-left: 0.625rem; }
+      footer ul li:last-child {
+        margin-right: 0.9375rem; } }
 @media only screen and (orientation: portrait) {
   [data-template="home"] #sausage-slider:after {
     left: -10px; } }
@@ -3992,14 +4097,25 @@ h3 {
   [data-template="home"] #intro {
     text-align: center; }
   [data-template="home"] #sausage-slider:after {
-    left: 70px; } }
+    left: 70px; }
+
+  footer {
+    background: #ce9f57;
+    padding: 2.5rem 0;
+    margin: 0; }
+
+  #information {
+    text-align: center; }
+    #information img {
+      margin-bottom: 1.875rem;
+      max-width: 300px; } }
 @media only screen and (min-width: 64.063em) {
   header#nav h1 a {
     margin: 0;
     float: left;
     width: 363px;
     height: 236px;
-    background: url('../images/logo-hankshautedogs.png?1429905239');
+    background: url('../images/logo-hankshautedogs.png?1430385718');
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
@@ -4027,31 +4143,10 @@ h3 {
   [data-template="about"] #board.pull-up {
     margin-top: -100px; }
 
-  [data-template="info"] #map {
-    margin-top: 0px;
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1); }
-
-  footer ul {
-    margin: 0 auto 1.0625rem auto;
-    margin-left: -1.375rem;
-    margin-right: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
-    margin: 0; }
-    footer ul > li {
-      list-style: none;
-      float: left;
-      margin-left: 1.375rem;
-      display: block; }
-      footer ul > li > * {
-        display: block; }
-    footer ul li {
-      font-size: 1rem;
-      letter-spacing: 0.1em; } }
+  [data-template="info"] #information li {
+    font-size: 1rem; }
+  [data-template="info"] .snaps img {
+    margin-top: -120px; } }
 /*!--------------------------------------------------------------------
 STYLES "Outdated Browser"
 Version:    1.1.0 - 2014
