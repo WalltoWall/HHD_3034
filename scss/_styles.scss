@@ -382,6 +382,7 @@ h3 {
     }
     .snaps {
       @include grid-column(8, $push: 4);
+      position: relative;
       img {
         width: 45%;
         float: right;
@@ -393,6 +394,22 @@ h3 {
         }
         &:last-child {
           @include transform(rotate(-4deg));
+        }
+      }
+      img.floaters {
+        position: absolute;
+        z-index: 5;
+        &.first {
+          top: 70px;
+          right: -90px;
+        }
+        &.second {
+          top: 720px;
+          left: -60px;
+        }
+        &.third {
+          top: 410px;
+          left: -490px;
         }
       }
     }
@@ -451,6 +468,12 @@ h3 {
   }
   .mailinglist {
     margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .floaters {
+    display: none;
   }
 }
 

@@ -3973,7 +3973,8 @@ h3 {
     width: 66.66667%;
     left: 33.33333%;
     right: auto;
-    float: left; }
+    float: left;
+    position: relative; }
     [data-template="info"] .snaps img {
       width: 45%;
       float: right;
@@ -3989,6 +3990,18 @@ h3 {
         -ms-transform: rotate(-4deg);
         -webkit-transform: rotate(-4deg);
         transform: rotate(-4deg); }
+    [data-template="info"] .snaps img.floaters {
+      position: absolute;
+      z-index: 5; }
+      [data-template="info"] .snaps img.floaters.first {
+        top: 70px;
+        right: -90px; }
+      [data-template="info"] .snaps img.floaters.second {
+        top: 720px;
+        left: -60px; }
+      [data-template="info"] .snaps img.floaters.third {
+        top: 410px;
+        left: -490px; }
   [data-template="info"] .kakaako, [data-template="info"] .sheraton {
     width: 100%;
     margin-left: auto;
@@ -4097,6 +4110,9 @@ h3 {
 
   .mailinglist {
     margin-left: 15px; } }
+@media screen and (max-width: 880px) {
+  .floaters {
+    display: none; } }
 @media only screen and (orientation: portrait) {
   [data-template="home"] #sausage-slider:after {
     left: -10px; } }
