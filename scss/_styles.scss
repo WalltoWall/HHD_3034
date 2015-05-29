@@ -19,6 +19,10 @@ hr {
   @include transform(translateX(-92px));
 }
 
+.timer {
+  display: none;
+}
+
 .animsition-loading {
   position: fixed;
   top: 0;
@@ -153,9 +157,9 @@ h3 {
     position: relative;
     float: none;
     margin: 20px auto;
-    .orbit-timer {
-      display: none;
-    }
+    // .orbit-timer {
+    //   display: none;
+    // }
     .sausage-orbit {
       z-index: 2;
     }

@@ -2,9 +2,22 @@
 // @codekit-prepend "../bower_components/animsition/dist/js/jquery.animsition.min.js"
 // @codekit-prepend "../bower_components/prettyembeds/jquery.prettyembed.min.js"
 // @codekit-prepend "../bower_components/fitvids/jquery.fitvids.js"
-$(document).foundation();
+$(document).foundation({
+  orbit: {
+    animation: 'slide',
+    timer_speed: 1500,
+    pause_on_hover: false,
+    resume_on_mouseout: true,
+    navigation_arrows: false,
+    bullets: false,
+    slide_number: false,
+    timer: true
+  }
+});
 $(document).ready(function() {
-
+  setTimeout(function() {
+      $(".sausage-orbit").click();
+  }, 4000);
   // $(".animsition").animsition({
     
   //     inClass               :   'fade-in',
@@ -28,6 +41,7 @@ $(document).ready(function() {
   //     overlayClass          :   'animsition-overlay-slide',
   //     overlayParentElement  :   'body'
   // });
+
   // Fit Vid
   $("#videoPlayer").fitVids();
 
