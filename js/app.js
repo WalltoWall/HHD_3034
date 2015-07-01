@@ -5,7 +5,7 @@
 $(document).foundation({
   orbit: {
     animation: 'slide',
-    timer_speed: 1500,
+    timer_speed: 3500,
     pause_on_hover: false,
     resume_on_mouseout: true,
     navigation_arrows: false,
