@@ -27,6 +27,9 @@ export const useSiteSettings = () => {
           instagram_handle {
             text
           }
+          online_order_link {
+            url
+          }
         }
       }
     }
@@ -41,5 +44,6 @@ export const useSiteSettings = () => {
     facebookHandle: settings?.facebook_handle?.text,
     twitterHandle: settings?.twitter_handle?.text,
     instagramHandle: settings?.instagram_handle?.text,
+    onlineOrderHref: settings?.online_order_link?.url,
   }
 }

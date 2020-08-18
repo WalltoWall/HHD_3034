@@ -24,7 +24,7 @@ const PageBodyText = ({
     innerMaxWidth="large"
     styles={{
       color: 'gray30',
-      marginTop: previousIsHeader ? [null, -30, -40] : undefined,
+      marginTop: previousIsHeader ? [null, -25, -30, -40] : undefined,
     }}
   >
     <Box styles={{ display: 'flex' }}>

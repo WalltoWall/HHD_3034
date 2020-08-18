@@ -88,7 +88,7 @@ const PageBodyAboutHankS = ({
             padding: [7, 10],
             paddingBottom: [15, 18],
             position: 'relative',
-            marginTop: previousIsHeader ? [null, -30, -40] : undefined,
+            marginTop: previousIsHeader ? [null, -20, -30, -35] : undefined,
             marginRight: [null, null, null, -10],
           }}
         >

@@ -4841,6 +4841,7 @@ export type PrismicSettingsDataType = {
   facebook_handle?: Maybe<PrismicStructuredTextType>;
   twitter_handle?: Maybe<PrismicStructuredTextType>;
   instagram_handle?: Maybe<PrismicStructuredTextType>;
+  online_order_link?: Maybe<PrismicLinkType>;
   redirects?: Maybe<Array<Maybe<PrismicSettingsRedirectsGroupType>>>;
   preview_map?: Maybe<Array<Maybe<PrismicSettingsPreviewMapGroupType>>>;
 };
@@ -4853,6 +4854,7 @@ export type PrismicSettingsDataTypeFilterInput = {
   facebook_handle?: Maybe<PrismicStructuredTextTypeFilterInput>;
   twitter_handle?: Maybe<PrismicStructuredTextTypeFilterInput>;
   instagram_handle?: Maybe<PrismicStructuredTextTypeFilterInput>;
+  online_order_link?: Maybe<PrismicLinkTypeFilterInput>;
   redirects?: Maybe<PrismicSettingsRedirectsGroupTypeFilterListInput>;
   preview_map?: Maybe<PrismicSettingsPreviewMapGroupTypeFilterListInput>;
 };
@@ -4885,6 +4887,18 @@ export enum PrismicSettingsFieldsEnum {
   DataInstagramHandleHtml = 'data___instagram_handle___html',
   DataInstagramHandleText = 'data___instagram_handle___text',
   DataInstagramHandleRaw = 'data___instagram_handle___raw',
+  DataOnlineOrderLinkLinkType = 'data___online_order_link___link_type',
+  DataOnlineOrderLinkIsBroken = 'data___online_order_link___isBroken',
+  DataOnlineOrderLinkUrl = 'data___online_order_link___url',
+  DataOnlineOrderLinkTarget = 'data___online_order_link___target',
+  DataOnlineOrderLinkSize = 'data___online_order_link___size',
+  DataOnlineOrderLinkId = 'data___online_order_link___id',
+  DataOnlineOrderLinkType = 'data___online_order_link___type',
+  DataOnlineOrderLinkTags = 'data___online_order_link___tags',
+  DataOnlineOrderLinkLang = 'data___online_order_link___lang',
+  DataOnlineOrderLinkSlug = 'data___online_order_link___slug',
+  DataOnlineOrderLinkUid = 'data___online_order_link___uid',
+  DataOnlineOrderLinkRaw = 'data___online_order_link___raw',
   DataRedirects = 'data___redirects',
   DataRedirectsFromPath = 'data___redirects___from_path',
   DataRedirectsToPath = 'data___redirects___to_path',
@@ -7696,6 +7710,7 @@ export type SitePluginPluginOptionsSchemasSettingsMain = {
   facebook_handle?: Maybe<SitePluginPluginOptionsSchemasSettingsMainFacebook_Handle>;
   twitter_handle?: Maybe<SitePluginPluginOptionsSchemasSettingsMainTwitter_Handle>;
   instagram_handle?: Maybe<SitePluginPluginOptionsSchemasSettingsMainInstagram_Handle>;
+  online_order_link?: Maybe<SitePluginPluginOptionsSchemasSettingsMainOnline_Order_Link>;
 };
 
 export type SitePluginPluginOptionsSchemasSettingsMainFacebook_Handle = {
@@ -7726,6 +7741,7 @@ export type SitePluginPluginOptionsSchemasSettingsMainFilterInput = {
   facebook_handle?: Maybe<SitePluginPluginOptionsSchemasSettingsMainFacebook_HandleFilterInput>;
   twitter_handle?: Maybe<SitePluginPluginOptionsSchemasSettingsMainTwitter_HandleFilterInput>;
   instagram_handle?: Maybe<SitePluginPluginOptionsSchemasSettingsMainInstagram_HandleFilterInput>;
+  online_order_link?: Maybe<SitePluginPluginOptionsSchemasSettingsMainOnline_Order_LinkFilterInput>;
 };
 
 export type SitePluginPluginOptionsSchemasSettingsMainInstagram_Handle = {
@@ -7746,6 +7762,26 @@ export type SitePluginPluginOptionsSchemasSettingsMainInstagram_HandleConfigFilt
 export type SitePluginPluginOptionsSchemasSettingsMainInstagram_HandleFilterInput = {
   type?: Maybe<StringQueryOperatorInput>;
   config?: Maybe<SitePluginPluginOptionsSchemasSettingsMainInstagram_HandleConfigFilterInput>;
+};
+
+export type SitePluginPluginOptionsSchemasSettingsMainOnline_Order_Link = {
+  type?: Maybe<Scalars['String']>;
+  config?: Maybe<SitePluginPluginOptionsSchemasSettingsMainOnline_Order_LinkConfig>;
+};
+
+export type SitePluginPluginOptionsSchemasSettingsMainOnline_Order_LinkConfig = {
+  label?: Maybe<Scalars['String']>;
+  placeholder?: Maybe<Scalars['String']>;
+};
+
+export type SitePluginPluginOptionsSchemasSettingsMainOnline_Order_LinkConfigFilterInput = {
+  label?: Maybe<StringQueryOperatorInput>;
+  placeholder?: Maybe<StringQueryOperatorInput>;
+};
+
+export type SitePluginPluginOptionsSchemasSettingsMainOnline_Order_LinkFilterInput = {
+  type?: Maybe<StringQueryOperatorInput>;
+  config?: Maybe<SitePluginPluginOptionsSchemasSettingsMainOnline_Order_LinkConfigFilterInput>;
 };
 
 export type SitePluginPluginOptionsSchemasSettingsMainSite_Copyright = {
@@ -8085,7 +8121,7 @@ export type UseNavigationQuery = { header?: Maybe<{ data?: Maybe<{ main?: Maybe<
 export type PrismicSiteSettingsQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type PrismicSiteSettingsQuery = { prismicSettings?: Maybe<{ data?: Maybe<{ site_name?: Maybe<Pick<PrismicStructuredTextType, 'text'>>, site_description?: Maybe<Pick<PrismicStructuredTextType, 'text'>>, site_copyright?: Maybe<Pick<PrismicStructuredTextType, 'text'>>, facebook_handle?: Maybe<Pick<PrismicStructuredTextType, 'text'>>, twitter_handle?: Maybe<Pick<PrismicStructuredTextType, 'text'>>, instagram_handle?: Maybe<Pick<PrismicStructuredTextType, 'text'>> }> }> };
+export type PrismicSiteSettingsQuery = { prismicSettings?: Maybe<{ data?: Maybe<{ site_name?: Maybe<Pick<PrismicStructuredTextType, 'text'>>, site_description?: Maybe<Pick<PrismicStructuredTextType, 'text'>>, site_copyright?: Maybe<Pick<PrismicStructuredTextType, 'text'>>, facebook_handle?: Maybe<Pick<PrismicStructuredTextType, 'text'>>, twitter_handle?: Maybe<Pick<PrismicStructuredTextType, 'text'>>, instagram_handle?: Maybe<Pick<PrismicStructuredTextType, 'text'>>, online_order_link?: Maybe<Pick<PrismicLinkType, 'url'>> }> }> };
 
 export type NotFoundPageQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -8132,7 +8168,9 @@ type SlicesPageBody_PrismicPageBodyLocations_Fragment = PageBodyLocationsFragmen
 
 type SlicesPageBody_PrismicPageBodyText_Fragment = PageBodyTextFragment;
 
-export type SlicesPageBodyFragment = SlicesPageBody_PrismicPageBodyDogSlideshow_Fragment | SlicesPageBody_PrismicPageBodyProductList_Fragment | SlicesPageBody_PrismicPageBodyAboutHankS_Fragment | SlicesPageBody_PrismicPageBodyLocations_Fragment | SlicesPageBody_PrismicPageBodyText_Fragment;
+type SlicesPageBody_PrismicPageBodyImage_Fragment = PageBodyImageFragment;
+
+export type SlicesPageBodyFragment = SlicesPageBody_PrismicPageBodyDogSlideshow_Fragment | SlicesPageBody_PrismicPageBodyProductList_Fragment | SlicesPageBody_PrismicPageBodyAboutHankS_Fragment | SlicesPageBody_PrismicPageBodyLocations_Fragment | SlicesPageBody_PrismicPageBodyText_Fragment | SlicesPageBody_PrismicPageBodyImage_Fragment;
 
 export type PageBodyAboutHankSAssetsQueryVariables = Exact<{ [key: string]: never; }>;
 

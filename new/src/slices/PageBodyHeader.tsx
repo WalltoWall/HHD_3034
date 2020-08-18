@@ -16,6 +16,8 @@ import { Inline } from '../components/Inline'
 import { Link } from '../components/Link'
 import { Text } from '../components/Text'
 
+import * as styleRefs from './PageBodyHeader.treat'
+
 const useQueryData = () =>
   useStaticQuery<HeaderQuery>(graphql`
     query Header {
@@ -41,7 +43,7 @@ export type PageBodyHeaderProps = ReturnType<typeof mapDataToProps> &
 
 type NavItemProps = {
   href: string
-  children: string
+  children: React.ReactNode
   location: Location
 }
 
@@ -80,16 +82,18 @@ const NavItem = ({ href, children, location }: NavItemProps) => {
           <GatsbyImage fluid={imageFluid} imgStyle={{ objectFit: 'contain' }} />
         </Box>
       )}
-      <Text
-        variant="sansCond-20-30"
-        styles={{
-          textTransform: 'uppercase',
-          letterSpacing: 's',
-          position: 'relative',
-        }}
-      >
-        <Link href={href}>{children}</Link>
-      </Text>
+      <Link href={href}>
+        <Text
+          variant="sansCond-20-30"
+          styles={{
+            textTransform: 'uppercase',
+            letterSpacing: 's',
+            position: 'relative',
+          }}
+        >
+          {children}
+        </Text>
+      </Link>
     </Box>
   )
 }
@@ -139,7 +143,12 @@ const PageBodyHeader = ({ nextSharesBg, location }: PageBodyHeaderProps) => {
             }}
           >
             <Box component="nav" styles={{ marginBottom: [2, 0] }}>
-              <Inline variant="list" space={6}>
+              <Inline
+                variant="list"
+                space={[5, null, null, 6]}
+                wrap={false}
+                alignY="center"
+              >
                 {navigation.header?.map?.(
                   (item) =>
                     item?.primary?.link?.url &&
@@ -153,12 +162,32 @@ const PageBodyHeader = ({ nextSharesBg, location }: PageBodyHeaderProps) => {
                       </NavItem>
                     ),
                 )}
+                {siteSettings.onlineOrderHref && (
+                  <Link href={siteSettings.onlineOrderHref}>
+                    <Box
+                      styles={{
+                        backgroundColor: 'red40',
+                        color: 'white',
+                        padding: 3,
+                      }}
+                    >
+                      <Text
+                        variant="sansCond-20-30"
+                        className={styleRefs.letterSpacingOffsetFix}
+                        styles={{
+                          textTransform: 'uppercase',
+                          letterSpacing: 's',
+                          position: 'relative',
+                        }}
+                      >
+                        Order
+                      </Text>
+                    </Box>
+                  </Link>
+                )}
               </Inline>
             </Box>
-            <Box
-              component="nav"
-              styles={{ color: 'red40', marginBottom: [0, -2] }}
-            >
+            <Box component="nav" styles={{ color: 'red40' }}>
               <Inline variant="list" space={6} wrap={false}>
                 {siteSettings.facebookHandle && (
                   <Link

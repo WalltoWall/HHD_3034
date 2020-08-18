@@ -10,8 +10,8 @@ import * as RA from 'fp-ts/es6/ReadonlyArray'
 
 const variants = {
   base: {
-    paddingLeft: [4, 7, 10],
-    paddingRight: [4, 7, 10],
+    paddingLeft: [6, 8, 10],
+    paddingRight: [6, 8, 10],
     paddingTop: [10, 13, 16],
     paddingBottom: [10, 13, 16],
   },

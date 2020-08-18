@@ -24,7 +24,7 @@ const PageBodyImage = ({
     innerMaxWidth="large"
     styles={{
       color: 'gray30',
-      marginTop: previousIsHeader ? [null, -40, -48] : undefined,
+      marginTop: previousIsHeader ? [null, -30, -40, -48] : undefined,
       marginRight: [null, null, null, -10],
     }}
   >

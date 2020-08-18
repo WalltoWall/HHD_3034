@@ -30,7 +30,7 @@ const fontsets = {
   },
   'sansCond-20-30': {
     fontMetrics: metrics.sansCond,
-    fontSizes: [1.25, 1.875],
+    fontSizes: [1.25, null, 1.5, 1.875],
     leading: 1.25,
   },
 }

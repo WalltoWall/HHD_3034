@@ -48,6 +48,13 @@
         "single": "paragraph",
         "label": "Instagram Handle"
       }
+    },
+    "online_order_link": {
+      "type": "Link",
+      "config": {
+        "label": "Online Order Link",
+        "placeholder": "Link to order online"
+      }
     }
   },
   "Redirects": {

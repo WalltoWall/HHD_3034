@@ -30,7 +30,7 @@ export const ButtonLink = ({
       }}
     >
       <Text
-        variant="sans-12"
+        variant="sansCond-16"
         styles={{ letterSpacing: 'xs', textTransform: 'uppercase' }}
       >
         {children}

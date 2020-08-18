@@ -32,7 +32,7 @@ const useQueryData = () =>
       }
       doggystyle: file(relativePath: { eq: "texture-doggystyle.png" }) {
         childImageSharp {
-          fluid(maxWidth: 200, quality: 100) {
+          fluid(quality: 100) {
             ...GatsbyImageSharpFluid_withWebp_noBase64
           }
         }
@@ -94,7 +94,7 @@ const PageBodyDogSlideshow = ({
             marginBottom: [8, null, 0],
             flexGrow: [null, null, 1],
             width: [null, '10/12', 'auto'],
-            marginTop: previousIsHeader ? [-20, -30, -48] : undefined,
+            marginTop: previousIsHeader ? [-20, -30, -40] : undefined,
           }}
         >
           {imageFluidOohlala && (
@@ -102,7 +102,7 @@ const PageBodyDogSlideshow = ({
               styles={{
                 width: '4/12',
                 marginLeft: 'auto',
-                marginRight: [null, -4, -8, -12],
+                marginRight: [-4, null, -8, -12],
               }}
             >
               <GatsbyImage
@@ -115,8 +115,8 @@ const PageBodyDogSlideshow = ({
             styles={{
               position: 'relative',
               zIndex: 1,
-              marginLeft: [-4, -7, 0],
-              marginRight: [-4, -7, 0],
+              marginLeft: [-6, -8, 0],
+              marginRight: [-6, -8, 0],
               marginTop: [-12, -26],
               marginBottom: [-4, -8],
             }}
@@ -124,9 +124,7 @@ const PageBodyDogSlideshow = ({
             {children}
           </Slider>
           {imageFluidDoggystyle && (
-            <Box styles={{ width: '11/12', marginLeft: 'auto' }}>
-              <GatsbyImage fluid={imageFluidDoggystyle} alt="Doggy Style" />
-            </Box>
+            <GatsbyImage fluid={imageFluidDoggystyle} alt="Doggy Style" />
           )}
         </Box>
         {textHTML && (
@@ -147,7 +145,7 @@ const PageBodyDogSlideshow = ({
             }}
             styles={{
               width: [null, null, '4/12'],
-              marginRight: [null, null, 4],
+              marginRight: [null, null, 6],
             }}
           />
         )}
