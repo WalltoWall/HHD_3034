@@ -7,14 +7,14 @@ import { isPathActiveExact } from '@walltowall/helpers'
 import { HeaderQuery } from '../graphqlTypes'
 import { MapDataToPropsArgs } from '../types'
 import { PageTemplateEnhancerProps } from '../templates/page'
-
-import { BoundedBox } from '../components/BoundedBox'
-import { Text } from '../components/Text'
-import { Link } from '../components/Link'
-import { Inline } from '../components/Inline'
-import { Icon } from '../components/Icon'
 import { useNavigation } from '../hooks/useNavigation'
 import { useSiteSettings } from '../hooks/useSiteSettings'
+
+import { BoundedBox } from '../components/BoundedBox'
+import { Icon } from '../components/Icon'
+import { Inline } from '../components/Inline'
+import { Link } from '../components/Link'
+import { Text } from '../components/Text'
 
 const useQueryData = () =>
   useStaticQuery<HeaderQuery>(graphql`

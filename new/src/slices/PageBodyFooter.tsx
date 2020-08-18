@@ -1,14 +1,14 @@
 import * as React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 import { Box } from '@walltowall/calico'
 
 import { PageTemplateEnhancerProps } from '../templates/page'
 import { LocationsQuery } from '../graphqlTypes'
 
-import { BoundedBox } from '../components/BoundedBox'
-import { Text } from '../components/Text'
-import { Inline } from '../components/Inline'
 import { Anchor } from '../components/Anchor'
-import { useStaticQuery, graphql } from 'gatsby'
+import { BoundedBox } from '../components/BoundedBox'
+import { Inline } from '../components/Inline'
+import { Text } from '../components/Text'
 
 export type PageBodyFooter = PageTemplateEnhancerProps
 

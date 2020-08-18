@@ -1,16 +1,16 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
 import { getRichText } from '@walltowall/helpers'
-
-import { BoundedBox } from '../components/BoundedBox'
-import { HTMLContent } from '../components/HTMLContent'
+import GatsbyImage, { FluidObject } from 'gatsby-image'
+import { Box } from '@walltowall/calico'
 
 import { PageBodyProductListFragment } from '../graphqlTypes'
 import { MapDataToPropsArgs } from '../types'
 import { PageTemplateEnhancerProps } from '../templates/page'
-import GatsbyImage, { FluidObject } from 'gatsby-image'
-import { Box } from '@walltowall/calico'
+
+import { BoundedBox } from '../components/BoundedBox'
 import { Columns } from '../components/Columns'
+import { HTMLContent } from '../components/HTMLContent'
 
 export type PageBodyProductListProps = ReturnType<typeof mapDataToProps> &
   PageTemplateEnhancerProps

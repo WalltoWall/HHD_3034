@@ -20,13 +20,9 @@ export type Theme = typeof theme
 
 export const colors = {
   white: '#fff',
-  black: '#000',
-  gray: '#777',
-  blue: '#00f',
-  red: '#f00',
-
   red40: '#ad2420',
   gray30: '#584d4d',
+  beige70: '#f2d49b',
 } as const
 
 const space = {

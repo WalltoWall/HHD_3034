@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 import { getRichText } from '@walltowall/helpers'
 import { useKeenSlider } from 'keen-slider/react'
 import { Box, BoxProps } from '@walltowall/calico'
+import GatsbyImage, { FluidObject } from 'gatsby-image'
 
 import {
   PageBodyDogSlideshowImagesQuery,
@@ -16,7 +17,6 @@ import { BoundedBox } from '../components/BoundedBox'
 import { HTMLContent } from '../components/HTMLContent'
 
 import 'keen-slider/keen-slider.min.css'
-import GatsbyImage, { FluidObject } from 'gatsby-image'
 
 const SLIDE_DURATION = 6000 // ms
 

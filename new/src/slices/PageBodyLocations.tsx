@@ -1,21 +1,21 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
 import { getRichText } from '@walltowall/helpers'
-
-import { BoundedBox } from '../components/BoundedBox'
-import { HTMLContent } from '../components/HTMLContent'
+import GatsbyImage, { FluidObject } from 'gatsby-image'
+import { Box } from '@walltowall/calico'
 
 import { PageBodyLocationsFragment } from '../graphqlTypes'
 import { MapDataToPropsArgs } from '../types'
 import { PageTemplateEnhancerProps } from '../templates/page'
-import GatsbyImage, { FluidObject } from 'gatsby-image'
-import { Box } from '@walltowall/calico'
-import { Columns } from '../components/Columns'
-import { Inline } from '../components/Inline'
-import { Heading } from '../components/Heading'
+
 import { Anchor } from '../components/Anchor'
-import { Text } from '../components/Text'
+import { BoundedBox } from '../components/BoundedBox'
 import { ButtonLink } from '../components/ButtonLink'
+import { Columns } from '../components/Columns'
+import { HTMLContent } from '../components/HTMLContent'
+import { Heading } from '../components/Heading'
+import { Inline } from '../components/Inline'
+import { Text } from '../components/Text'
 
 export type PageBodyLocationsProps = ReturnType<typeof mapDataToProps> &
   PageTemplateEnhancerProps

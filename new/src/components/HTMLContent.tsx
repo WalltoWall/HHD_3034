@@ -10,11 +10,11 @@ import { useUtilStyles } from '../hooks/useUtilStyles'
 
 const baseHeadingStyles = {
   marginTop: [8, 9, 10],
-  marginBottom: [7, 8],
+  marginBottom: 6,
 } as const
 
 const baseTextStyles = {
-  marginBottom: [6, 7, 8],
+  marginBottom: 6,
 } as const
 
 const HTMLHeading = (props: HeadingProps) => {
@@ -33,11 +33,12 @@ const HTMLHeading = (props: HeadingProps) => {
 }
 
 const components: React.ComponentProps<typeof HTMLRenderer>['components'] = {
-  h1: (props) => <HTMLHeading level={3} {...props} />,
+  h1: (props) => <HTMLHeading variant="sansB" level={3} {...props} />,
   h2: (props) => <HTMLHeading level={4} {...props} />,
-  h3: (props) => <HTMLHeading level={5} {...props} />,
+  h3: (props) => <HTMLHeading variant="sansC" level={5} {...props} />,
   h4: (props) => (
     <HTMLHeading
+      variant="sansC"
       level={6}
       {...props}
       styles={{ ...baseTextStyles, ...props.styles }}
@@ -45,6 +46,7 @@ const components: React.ComponentProps<typeof HTMLRenderer>['components'] = {
   ),
   h5: (props) => (
     <HTMLHeading
+      variant="sansC"
       level={6}
       {...props}
       styles={{ ...baseTextStyles, ...props.styles }}
@@ -52,6 +54,7 @@ const components: React.ComponentProps<typeof HTMLRenderer>['components'] = {
   ),
   h6: (props) => (
     <HTMLHeading
+      variant="sansC"
       level={6}
       {...props}
       styles={{ ...baseTextStyles, ...props.styles }}

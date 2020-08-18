@@ -22,6 +22,16 @@ const variantExtraStyles: Record<styleRefs.variations, BoxProps['styles']> = {
     textTransform: 'uppercase',
     letterSpacing: 'xs',
   },
+  sansB: {
+    fontFamily: 'sansCond',
+    textTransform: 'uppercase',
+    letterSpacing: 'xs',
+  },
+  sansC: {
+    fontFamily: 'sansCond',
+    textTransform: 'uppercase',
+    letterSpacing: 'xs',
+  },
 }
 
 export type HeadingProps = Omit<BoxProps, 'component'> & {

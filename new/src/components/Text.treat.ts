@@ -8,6 +8,11 @@ const fontsets = {
     fontSizes: [0.75],
     leading: 1.5,
   },
+  'sans-14': {
+    fontMetrics: metrics.sans,
+    fontSizes: [0.875],
+    leading: 1.5,
+  },
   'sans-16': {
     fontMetrics: metrics.sans,
     fontSizes: [1],

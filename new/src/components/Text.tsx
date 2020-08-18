@@ -12,6 +12,9 @@ const variantExtraStyles: Record<styleRefs.variations, BoxProps['styles']> = {
   'sans-12': {
     fontFamily: 'sans',
   },
+  'sans-14': {
+    fontFamily: 'sans',
+  },
   'sans-16': {
     fontFamily: 'sans',
   },
