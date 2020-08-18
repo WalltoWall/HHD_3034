@@ -36,21 +36,29 @@ export const mapDataToPropsEnhancer = (
   {
     context,
     nextContext,
+    previousContext,
     previousType,
     previousData,
   }: MapDataToPropsEnhancerArgs,
 ) => {
-  let nextSharesBg
+  let nextSharesBg, previousSharesBg
 
   // TODO: Clean up into a nicer helper function
   const _nsbg = propPairsEq('bg', context, nextContext)
   if (_nsbg.length === 1) nextSharesBg = _nsbg[0]
   else nextSharesBg = _nsbg.slice(0, 4) as [boolean, boolean, boolean, boolean]
 
+  const _psbg = propPairsEq('bg', context, previousContext)
+  if (_psbg.length === 1) previousSharesBg = _psbg[0]
+  else
+    previousSharesBg = _psbg.slice(0, 4) as [boolean, boolean, boolean, boolean]
+
   return {
     nextSharesBg,
+    previousSharesBg,
+    previousIsHeader: previousType === 'PageBodyHeader',
     id:
-      previousType === 'PageLayoutAnchor'
+      previousType === 'PageBodyAnchor'
         ? (previousData?.primary?.id as string)
         : undefined,
     ...props,

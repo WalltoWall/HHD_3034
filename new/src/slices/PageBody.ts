@@ -15,6 +15,8 @@ import * as PageBodyDogSlideshow from './PageBodyDogSlideshow'
 import * as PageBodyProductList from './PageBodyProductList'
 import * as PageBodyLocations from './PageBodyLocations'
 import * as PageBodyAboutHankS from './PageBodyAboutHankS'
+import * as PageBodyText from './PageBodyText'
+import * as PageBodyImage from './PageBodyImage'
 
 // 2. Add your slice
 const slices = {
@@ -24,6 +26,8 @@ const slices = {
   PageBodyProductList,
   PageBodyLocations,
   PageBodyAboutHankS,
+  PageBodyText,
+  PageBodyImage,
 }
 
 // 3. Add your slice fragment
@@ -33,6 +37,8 @@ export const fragment = graphql`
     ...PageBodyProductList
     ...PageBodyLocations
     ...PageBodyAboutHankS
+    ...PageBodyText
+    ...PageBodyImage
 
     # The following slices do not have fragments:
     #...PageBodyFooter

@@ -23,12 +23,16 @@ export type PageBodyLocationsProps = ReturnType<typeof mapDataToProps> &
 const PageBodyLocations = ({
   children,
   nextSharesBg,
+  previousSharesBg,
 }: PageBodyLocationsProps) => (
   <BoundedBox
     component="section"
     nextSharesBg={nextSharesBg}
     innerMaxWidth="large"
-    styles={{ color: 'gray30' }}
+    styles={{
+      color: 'gray30',
+      marginTop: previousSharesBg ? [null, -15] : undefined,
+    }}
   >
     <Columns variant="list" count={1} space={12}>
       {children}

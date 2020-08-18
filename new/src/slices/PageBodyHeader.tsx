@@ -135,7 +135,7 @@ const PageBodyHeader = ({ nextSharesBg, location }: PageBodyHeaderProps) => {
               display: 'flex',
               flexDirection: ['column', 'columnReverse'],
               alignItems: ['center', 'end'],
-              marginBottom: [8, 2],
+              marginBottom: 2,
             }}
           >
             <Box component="nav" styles={{ marginBottom: [2, 0] }}>
@@ -184,16 +184,6 @@ const PageBodyHeader = ({ nextSharesBg, location }: PageBodyHeaderProps) => {
               </Inline>
             </Box>
           </Box>
-          <Text
-            component="p"
-            variant="sansCond-16"
-            styles={{ textTransform: 'uppercase', letterSpacing: 'xs' }}
-          >
-            Hank's Haute Dogs is a great place to chow down on an American
-            staple done with a twist. Pick a classic or get haute. Hank's Dogs
-            taste great on their own, but pair them with sides like Hank's
-            Awesome French Fries and you'll be in Haute Dog Heaven.
-          </Text>
         </Box>
       </Box>
     </BoundedBox>

@@ -66,7 +66,8 @@
           "dog_slideshow": [],
           "product_list": [],
           "about_hank_s": [],
-          "locations": []
+          "locations": [],
+          "image": []
         },
         "choices": {
           "dog_slideshow": {
@@ -171,6 +172,43 @@
                 }
               }
             }
+          },
+          "text": {
+            "type": "Slice",
+            "fieldset": "Text",
+            "description": "Text block with basic formatting options",
+            "icon": "text_fields",
+            "display": "list",
+            "non-repeat": {
+              "text": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, heading1, heading2, strong, em, hyperlink",
+                  "allowTargetBlank": true,
+                  "label": "Text",
+                  "placeholder": "Text to display"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "image": {
+            "type": "Slice",
+            "fieldset": "Image",
+            "description": "Full-width image",
+            "icon": "photo_size_select_actual",
+            "display": "list",
+            "non-repeat": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Image"
+                }
+              }
+            },
+            "repeat": {}
           }
         }
       }

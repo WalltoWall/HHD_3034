@@ -48,6 +48,7 @@ const PageBodyAboutHankS = ({
   textHTML,
   sideImages = [],
   nextSharesBg,
+  previousIsHeader,
 }: PageBodyAboutHankSProps) => {
   const queryData = useQueryData()
   const backBoardImageFluid = queryData.backBoard?.childImageSharp?.fluid
@@ -64,7 +65,7 @@ const PageBodyAboutHankS = ({
         <Box
           styles={{
             display: ['none', 'block'],
-            width: '4/12',
+            width: '4.5/12',
             flexShrink: 0,
             marginRight: [null, 12],
           }}
@@ -87,6 +88,8 @@ const PageBodyAboutHankS = ({
             padding: [7, 10],
             paddingBottom: [15, 18],
             position: 'relative',
+            marginTop: previousIsHeader ? [null, -30, -40] : undefined,
+            marginRight: [null, null, null, -10],
           }}
         >
           {clipImageFluid && (

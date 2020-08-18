@@ -69,6 +69,7 @@ const PageBodyDogSlideshow = ({
   textHTML,
   children,
   nextSharesBg,
+  previousIsHeader,
 }: PageBodyDogSlideshowProps) => {
   const queryData = useQueryData()
   const imageFluidOohlala = queryData.oohlala?.childImageSharp?.fluid
@@ -93,6 +94,7 @@ const PageBodyDogSlideshow = ({
             marginBottom: [8, null, 0],
             flexGrow: [null, null, 1],
             width: [null, '10/12', 'auto'],
+            marginTop: previousIsHeader ? [-20, -30, -48] : undefined,
           }}
         >
           {imageFluidOohlala && (

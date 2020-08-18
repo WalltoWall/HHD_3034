@@ -27,6 +27,8 @@ export const colors = {
 
 const space = {
   auto: 'auto',
+  [-48]: '-12rem',
+  [-40]: '-10rem',
   [-30]: '-7.5rem',
   [-29]: '-7.25rem',
   [-28]: '-7rem',
@@ -103,7 +105,7 @@ export const theme = createCalicoTheme({
     mobile: '0rem',
     tablet: '48rem',
     desktop: '55rem',
-    desktopWide: '90rem',
+    desktopWide: '65rem',
   },
 
   rules: {
@@ -146,6 +148,8 @@ export const theme = createCalicoTheme({
 
     width: {
       ...baseCalicoTheme.rules.width,
+      '4.5/12': (4.5 / 12) * 100 + '%',
+      '5.5/12': (5.5 / 12) * 100 + '%',
       '1.5rem': '1.5rem',
       '4.5rem': '4.5rem',
       '5.5rem': '5.5rem',
