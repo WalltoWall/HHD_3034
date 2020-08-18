@@ -25,7 +25,7 @@ const LocationDetails = ({
   addressHref,
   phoneNumber,
 }: LocationDetailsProps) => (
-  <Inline space={3}>
+  <Inline space={3} spaceY={1} align="center">
     {name && <Box styles={{ color: 'red40', fontWeight: 'bold' }}>{name}</Box>}
     {address && (
       <Box styles={{ color: 'red40' }}>
@@ -76,7 +76,6 @@ const PageBodyFooter = ({ nextSharesBg }: PageBodyFooter) => {
         <Inline
           variant="list"
           space={6}
-          spaceY={2}
           align="center"
           styles={{ marginBottom: 6 }}
         >
@@ -90,7 +89,7 @@ const PageBodyFooter = ({ nextSharesBg }: PageBodyFooter) => {
             />
           ))}
         </Inline>
-        <Inline space={6} spaceY={2} align="center">
+        <Inline space={6} spaceY={1} align="center">
           <Box component="p">Open 7 Days 11am - 5pm / 6pm Fri- Sun</Box>
           <Anchor href="http://eepurl.com/bo8x8L">
             Subscribe to Our Mailing List
