@@ -46,7 +46,6 @@ module.exports = {
         schemas: require('./src/schemas'),
         linkResolver: require('./src/linkResolver').linkResolver,
         fetchLinks: ['page.parent'],
-        prismicToolbar: 'legacy',
       },
     },
     {
