@@ -1,0 +1,66 @@
+{
+  "Main": {
+    "title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "TItle",
+        "placeholder": "Name of the location"
+      }
+    },
+    "address": {
+      "type": "StructuredText",
+      "config": {
+        "single": "paragraph",
+        "label": "Address",
+        "placeholder": "Full address of the location"
+      }
+    },
+    "address_link": {
+      "type": "Link",
+      "config": {
+        "label": "Address Link",
+        "placeholder": "Link to the location on Google Maps"
+      }
+    },
+    "phone_number": {
+      "type": "StructuredText",
+      "config": {
+        "single": "paragraph",
+        "label": "Phone Number",
+        "placeholder": "Phone number for the location"
+      }
+    },
+    "email_address": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+        "label": "Email Address",
+        "placeholder": "Email address for the location"
+      }
+    },
+    "hours": {
+      "type": "StructuredText",
+      "config": {
+        "single": "paragraph",
+        "label": "Hours",
+        "placeholder": "Hours for the location"
+      }
+    },
+    "jobs_link": {
+      "type": "Link",
+      "config": {
+        "label": "Jobs Link",
+        "placeholder": "Link to a list of job openings"
+      }
+    },
+    "image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Image"
+      }
+    }
+  }
+}
