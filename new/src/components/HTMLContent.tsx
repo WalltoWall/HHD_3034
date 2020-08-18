@@ -10,11 +10,11 @@ import { useUtilStyles } from '../hooks/useUtilStyles'
 
 const baseHeadingStyles = {
   marginTop: [8, 9, 10],
-  marginBottom: 6,
+  marginBottom: [4, 6],
 } as const
 
 const baseTextStyles = {
-  marginBottom: 6,
+  marginBottom: [4, 6],
 } as const
 
 const HTMLHeading = (props: HeadingProps) => {
