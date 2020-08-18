@@ -15,9 +15,12 @@ import { PageTemplateEnhancerProps } from '../templates/page'
 import { BoundedBox } from '../components/BoundedBox'
 import { HTMLContent } from '../components/HTMLContent'
 import { Heading } from '../components/Heading'
-import VideoDDD from '../assets/video-ddd.mp4'
-import VideoManVFood from '../assets/video-man-vs-food.mp4'
-import VideoCookingChannel from '../assets/video-cooking-channel.mp4'
+import AssetVideoDDD from '../assets/video-ddd.mp4'
+import AssetPosterDDD from '../assets/poster-ddd.jpg'
+import AssetVideoManVFood from '../assets/video-man-v-food.mp4'
+import AssetPosterManVFood from '../assets/poster-man-v-food.jpg'
+import AssetVideoCookingChannel from '../assets/video-cooking-channel.mp4'
+import AssetPosterCookingChannel from '../assets/poster-cooking-channel.jpg'
 
 import * as styleRefs from './PageBodyAboutHankS.treat'
 
@@ -148,8 +151,13 @@ const PageBodyAboutHankS = ({
           >
             Featured on Diners, Drive-Ins, and Dives
           </Heading>
-          <Box component="video" controls={true} styles={{ width: 'full' }}>
-            <source src={VideoDDD} type="video/mp4" />
+          <Box
+            component="video"
+            controls={true}
+            poster={AssetPosterDDD}
+            styles={{ width: 'full' }}
+          >
+            <source src={AssetVideoDDD} type="video/mp4" />
           </Box>
           <Heading
             variant="sansC"
@@ -162,8 +170,13 @@ const PageBodyAboutHankS = ({
           >
             Featured on Man v. Food
           </Heading>
-          <Box component="video" controls={true} styles={{ width: 'full' }}>
-            <source src={VideoManVFood} type="video/mp4" />
+          <Box
+            component="video"
+            controls={true}
+            poster={AssetPosterManVFood}
+            styles={{ width: 'full' }}
+          >
+            <source src={AssetVideoManVFood} type="video/mp4" />
           </Box>
           <Heading
             variant="sansC"
@@ -176,8 +189,13 @@ const PageBodyAboutHankS = ({
           >
             Featured on Unique Eats
           </Heading>
-          <Box component="video" controls={true} styles={{ width: 'full' }}>
-            <source src={VideoCookingChannel} type="video/mp4" />
+          <Box
+            component="video"
+            controls={true}
+            poster={AssetPosterCookingChannel}
+            styles={{ width: 'full' }}
+          >
+            <source src={AssetVideoCookingChannel} type="video/mp4" />
           </Box>
         </Box>
       </Box>
