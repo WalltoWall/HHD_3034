@@ -21,6 +21,7 @@
     "@walltowall/react-map-slices-to-components": "^0.4.1",
     "@walltowall/siamese": "^2.1.0",
     "capsize": "^1.1.0",
+    "clsx": "^1.1.1",
     "conditional-wrap": "^1.0.2",
     "dotenv": "^8.2.0",
     "fp-ts": "^2.8.1",
