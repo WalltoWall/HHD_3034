@@ -56,6 +56,14 @@ button {
   height: 100%;
 }
 
+[data-system-aspect-ratio] {
+  position: relative;
+}
 [data-system-aspect-ratio-inner] {
   display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
