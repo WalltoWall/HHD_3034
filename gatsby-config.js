@@ -46,6 +46,7 @@ module.exports = {
         schemas: require('./src/schemas'),
         linkResolver: require('./src/linkResolver').linkResolver,
         fetchLinks: ['page.parent'],
+        releaseID: 'X6Rs3RIAACMAOkI_',
       },
     },
     {
