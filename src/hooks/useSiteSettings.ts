@@ -33,6 +33,12 @@ export const useSiteSettings = () => {
           online_order_link {
             url
           }
+          uber_eats_link {
+            url
+          }
+          doordash_link {
+            url
+          }
           mailing_list_subscription_link {
             url
           }
@@ -52,6 +58,8 @@ export const useSiteSettings = () => {
     instagramHandle: settings?.instagram_handle?.text,
     footerHours: settings?.footer_hours?.text,
     onlineOrderHref: settings?.online_order_link?.url,
+    uberEatsHref: settings?.uber_eats_link?.url,
+    doordashHref: settings?.doordash_link?.url,
     mailingListSubscriptionLink: settings?.mailing_list_subscription_link?.url,
   }
 }

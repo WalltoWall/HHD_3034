@@ -188,28 +188,48 @@ const PageBodyHeader = ({ nextSharesBg, location }: PageBodyHeaderProps) => {
               </Inline>
             </Box>
             <Box component="nav" styles={{ color: 'red40' }}>
-              <Inline variant="list" space={6} wrap={false}>
-                {siteSettings.facebookHandle && (
-                  <Link
-                    href={`https://www.facebook.com/${siteSettings.facebookHandle}`}
-                  >
-                    <Icon name="facebook" styles={{ width: '1.5rem' }} />
-                  </Link>
-                )}
-                {siteSettings.twitterHandle && (
-                  <Link
-                    href={`https://twitter.com/${siteSettings.twitterHandle}`}
-                  >
-                    <Icon name="twitter" styles={{ width: '1.5rem' }} />
-                  </Link>
-                )}
-                {siteSettings.instagramHandle && (
-                  <Link
-                    href={`https://instagram.com/${siteSettings.instagramHandle}`}
-                  >
-                    <Icon name="instagram" styles={{ width: '1.5rem' }} />
-                  </Link>
-                )}
+              <Inline
+                space={6}
+                direction={['column', 'row']}
+                spaceY={4}
+                align="center"
+                alignY="center"
+              >
+                <Inline variant="list" space={6} wrap={false} alignY="center">
+                  {siteSettings.uberEatsHref && (
+                    <Link href={siteSettings.uberEatsHref}>
+                      <Icon name="uberEats" styles={{ width: '5.5rem' }} />
+                    </Link>
+                  )}
+                  {siteSettings.doordashHref && (
+                    <Link href={siteSettings.doordashHref}>
+                      <Icon name="doordash" styles={{ width: '7rem' }} />
+                    </Link>
+                  )}
+                </Inline>
+                <Inline variant="list" space={6} wrap={false} alignY="center">
+                  {siteSettings.facebookHandle && (
+                    <Link
+                      href={`https://www.facebook.com/${siteSettings.facebookHandle}`}
+                    >
+                      <Icon name="facebook" styles={{ width: '1.5rem' }} />
+                    </Link>
+                  )}
+                  {siteSettings.twitterHandle && (
+                    <Link
+                      href={`https://twitter.com/${siteSettings.twitterHandle}`}
+                    >
+                      <Icon name="twitter" styles={{ width: '1.5rem' }} />
+                    </Link>
+                  )}
+                  {siteSettings.instagramHandle && (
+                    <Link
+                      href={`https://instagram.com/${siteSettings.instagramHandle}`}
+                    >
+                      <Icon name="instagram" styles={{ width: '1.5rem' }} />
+                    </Link>
+                  )}
+                </Inline>
               </Inline>
             </Box>
           </Box>
