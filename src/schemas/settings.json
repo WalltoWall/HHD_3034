@@ -64,6 +64,20 @@
         "placeholder": "Link to order online"
       }
     },
+    "uber_eats_link": {
+      "type": "Link",
+      "config": {
+        "label": "Uber Eats Link",
+        "placeholder": "Link to order via Uber Eats"
+      }
+    },
+    "doordash_link": {
+      "type": "Link",
+      "config": {
+        "label": "DoorDash Link",
+        "placeholder": "Link to order via DoorDash"
+      }
+    },
     "mailing_list_subscription_link": {
       "type": "Link",
       "config": {

@@ -23,6 +23,7 @@ type InlineProps = {
   align?: NonNullable<BoxProps['styles']>['justifyContent']
   alignY?: NonNullable<BoxProps['styles']>['alignItems']
   wrap?: boolean
+  direction?: NonNullable<BoxProps['styles']>['flexDirection']
 } & Omit<BoxProps, 'wrap'>
 
 export const Inline = ({
@@ -33,6 +34,7 @@ export const Inline = ({
   align,
   alignY,
   wrap = true,
+  direction = 'row',
   ...props
 }: InlineProps) => {
   const negativeSpace = (Array.isArray(space)
@@ -58,6 +60,7 @@ export const Inline = ({
         styles={{
           display: 'flex',
           flexWrap: wrap ? 'wrap' : 'nowrap',
+          flexDirection: direction,
           justifyContent: align,
           alignItems: alignY,
           marginLeft: negativeSpace,

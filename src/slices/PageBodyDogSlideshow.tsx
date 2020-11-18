@@ -94,7 +94,7 @@ const PageBodyDogSlideshow = ({
             marginBottom: [8, null, 0],
             flexGrow: [null, null, 1],
             width: [null, '10/12', 'auto'],
-            marginTop: previousIsHeader ? [-20, -30, -40] : undefined,
+            marginTop: previousIsHeader ? [-15, -30, -40] : undefined,
           }}
         >
           {imageFluidOohlala && (
