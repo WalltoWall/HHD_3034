@@ -9,6 +9,7 @@ import { Anchor } from '../components/Anchor'
 import { BoundedBox } from '../components/BoundedBox'
 import { Inline } from '../components/Inline'
 import { Text } from '../components/Text'
+import { useSiteSettings } from '../hooks/useSiteSettings'
 
 export type PageBodyFooter = PageTemplateEnhancerProps
 
@@ -37,6 +38,7 @@ const LocationDetails = ({
 )
 
 const PageBodyFooter = ({ nextSharesBg }: PageBodyFooter) => {
+  const settings = useSiteSettings()
   const locationsData = useStaticQuery<LocationsQuery>(graphql`
     query Locations {
       allPrismicLocation {
@@ -90,10 +92,14 @@ const PageBodyFooter = ({ nextSharesBg }: PageBodyFooter) => {
           ))}
         </Inline>
         <Inline space={6} spaceY={1} align="center">
-          <Box component="p">Open 7 Days 11am - 5pm / 6pm Fri- Sun</Box>
-          <Anchor href="http://eepurl.com/bo8x8L">
-            Subscribe to Our Mailing List
-          </Anchor>
+          {settings.footerHours && (
+            <Box component="p">{settings.footerHours}</Box>
+          )}
+          {settings.mailingListSubscriptionLink && (
+            <Anchor href={settings.mailingListSubscriptionLink}>
+              Subscribe to Our Mailing List
+            </Anchor>
+          )}
           <Box component="p">
             Web Design & Development by{' '}
             <Anchor href="http://www.walltowall.com/">walltowall.com</Anchor>
