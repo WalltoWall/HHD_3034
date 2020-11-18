@@ -27,7 +27,13 @@ export const useSiteSettings = () => {
           instagram_handle {
             text
           }
+          footer_hours {
+            text
+          }
           online_order_link {
+            url
+          }
+          mailing_list_subscription_link {
             url
           }
         }
@@ -44,6 +50,8 @@ export const useSiteSettings = () => {
     facebookHandle: settings?.facebook_handle?.text,
     twitterHandle: settings?.twitter_handle?.text,
     instagramHandle: settings?.instagram_handle?.text,
+    footerHours: settings?.footer_hours?.text,
     onlineOrderHref: settings?.online_order_link?.url,
+    mailingListSubscriptionLink: settings?.mailing_list_subscription_link?.url,
   }
 }
