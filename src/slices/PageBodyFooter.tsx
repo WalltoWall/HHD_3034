@@ -38,7 +38,7 @@ const LocationDetails = ({
 )
 
 const PageBodyFooter = ({ nextSharesBg }: PageBodyFooter) => {
-  const settings = useSiteSettings()
+  const siteSettings = useSiteSettings()
   const locationsData = useStaticQuery<LocationsQuery>(graphql`
     query Locations {
       allPrismicLocation {
@@ -92,11 +92,11 @@ const PageBodyFooter = ({ nextSharesBg }: PageBodyFooter) => {
           ))}
         </Inline>
         <Inline space={6} spaceY={1} align="center">
-          {settings.footerHours && (
-            <Box component="p">{settings.footerHours}</Box>
+          {siteSettings.footerHours && (
+            <Box component="p">{siteSettings.footerHours}</Box>
           )}
-          {settings.mailingListSubscriptionLink && (
-            <Anchor href={settings.mailingListSubscriptionLink}>
+          {siteSettings.mailingListSubscriptionLink && (
+            <Anchor href={siteSettings.mailingListSubscriptionLink}>
               Subscribe to Our Mailing List
             </Anchor>
           )}
