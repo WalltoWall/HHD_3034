@@ -154,6 +154,7 @@ export const theme = createCalicoTheme({
       '1.5rem': '1.5rem',
       '4.5rem': '4.5rem',
       '5.5rem': '5.5rem',
+      '7rem': '7rem',
       '10rem': '10rem',
       '12rem': '12rem',
     },

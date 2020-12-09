@@ -2,7 +2,9 @@ import * as React from 'react'
 import { graphql } from 'gatsby'
 import { getRichText } from '@walltowall/helpers'
 import GatsbyImage, { FluidObject } from 'gatsby-image'
-import { Box } from '@walltowall/calico'
+import { Box, useBoxStyles } from '@walltowall/calico'
+import { AspectRatio } from '@walltowall/siamese'
+import clsx from 'clsx'
 
 import { PageBodyProductListFragment } from '../graphqlTypes'
 import { MapDataToPropsArgs } from '../types'
@@ -40,7 +42,12 @@ const PageBodyProductList = ({
           <GatsbyImage fluid={categoryImageFluid} alt={categoryImageAlt} />
         )}
       </Box>
-      <Columns variant="list" space={[4, 6]} count={[2, 3]}>
+      <Columns
+        variant="list"
+        space={[4, 6]}
+        count={[2, 3]}
+        styles={{ flexGrow: 1 }}
+      >
         {children}
       </Columns>
     </Box>
@@ -61,31 +68,40 @@ const PageBodyProductListProduct = ({
   imageAlt,
   descriptionText,
   descriptionHTML,
-}: PageBodyProductListProductProps) => (
-  <Box>
-    <Box
-      styles={{
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        marginBottom: [2, 4],
-        maxWidth: ['15rem', 'none'],
-      }}
-    >
-      {imageFluid && (
-        <GatsbyImage
-          fluid={imageFluid}
-          alt={imageAlt ?? `${title} - ${descriptionText}`}
-        />
-      )}
+}: PageBodyProductListProductProps) => {
+  const fullHeight = useBoxStyles({ height: 'full' })
+  const fullWidth = useBoxStyles({ width: 'full' })
+
+  return (
+    <Box>
+      <Box
+        styles={{
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          marginBottom: [2, 4],
+          maxWidth: ['15rem', 'none'],
+        }}
+      >
+        {imageFluid && (
+          <AspectRatio x={1} y={1}>
+            <GatsbyImage
+              fluid={imageFluid}
+              alt={imageAlt ?? `${title} - ${descriptionText}`}
+              imgStyle={{ objectFit: 'contain' }}
+              className={clsx(fullHeight, fullWidth)}
+            />
+          </AspectRatio>
+        )}
+      </Box>
+      <HTMLContent
+        html={descriptionHTML}
+        componentOverrides={{
+          p: (Comp) => (props) => <Comp variant="sans-12" {...props} />,
+        }}
+      />
     </Box>
-    <HTMLContent
-      html={descriptionHTML}
-      componentOverrides={{
-        p: (Comp) => (props) => <Comp variant="sans-12" {...props} />,
-      }}
-    />
-  </Box>
-)
+  )
+}
 PageBodyProductList.Product = PageBodyProductListProduct
 
 export const mapDataToProps = ({

@@ -4841,7 +4841,11 @@ export type PrismicSettingsDataType = {
   facebook_handle?: Maybe<PrismicStructuredTextType>;
   twitter_handle?: Maybe<PrismicStructuredTextType>;
   instagram_handle?: Maybe<PrismicStructuredTextType>;
+  footer_hours?: Maybe<PrismicStructuredTextType>;
   online_order_link?: Maybe<PrismicLinkType>;
+  uber_eats_link?: Maybe<PrismicLinkType>;
+  doordash_link?: Maybe<PrismicLinkType>;
+  mailing_list_subscription_link?: Maybe<PrismicLinkType>;
   redirects?: Maybe<Array<Maybe<PrismicSettingsRedirectsGroupType>>>;
   preview_map?: Maybe<Array<Maybe<PrismicSettingsPreviewMapGroupType>>>;
 };
@@ -4854,7 +4858,11 @@ export type PrismicSettingsDataTypeFilterInput = {
   facebook_handle?: Maybe<PrismicStructuredTextTypeFilterInput>;
   twitter_handle?: Maybe<PrismicStructuredTextTypeFilterInput>;
   instagram_handle?: Maybe<PrismicStructuredTextTypeFilterInput>;
+  footer_hours?: Maybe<PrismicStructuredTextTypeFilterInput>;
   online_order_link?: Maybe<PrismicLinkTypeFilterInput>;
+  uber_eats_link?: Maybe<PrismicLinkTypeFilterInput>;
+  doordash_link?: Maybe<PrismicLinkTypeFilterInput>;
+  mailing_list_subscription_link?: Maybe<PrismicLinkTypeFilterInput>;
   redirects?: Maybe<PrismicSettingsRedirectsGroupTypeFilterListInput>;
   preview_map?: Maybe<PrismicSettingsPreviewMapGroupTypeFilterListInput>;
 };
@@ -4887,6 +4895,9 @@ export enum PrismicSettingsFieldsEnum {
   DataInstagramHandleHtml = 'data___instagram_handle___html',
   DataInstagramHandleText = 'data___instagram_handle___text',
   DataInstagramHandleRaw = 'data___instagram_handle___raw',
+  DataFooterHoursHtml = 'data___footer_hours___html',
+  DataFooterHoursText = 'data___footer_hours___text',
+  DataFooterHoursRaw = 'data___footer_hours___raw',
   DataOnlineOrderLinkLinkType = 'data___online_order_link___link_type',
   DataOnlineOrderLinkIsBroken = 'data___online_order_link___isBroken',
   DataOnlineOrderLinkUrl = 'data___online_order_link___url',
@@ -4899,6 +4910,42 @@ export enum PrismicSettingsFieldsEnum {
   DataOnlineOrderLinkSlug = 'data___online_order_link___slug',
   DataOnlineOrderLinkUid = 'data___online_order_link___uid',
   DataOnlineOrderLinkRaw = 'data___online_order_link___raw',
+  DataUberEatsLinkLinkType = 'data___uber_eats_link___link_type',
+  DataUberEatsLinkIsBroken = 'data___uber_eats_link___isBroken',
+  DataUberEatsLinkUrl = 'data___uber_eats_link___url',
+  DataUberEatsLinkTarget = 'data___uber_eats_link___target',
+  DataUberEatsLinkSize = 'data___uber_eats_link___size',
+  DataUberEatsLinkId = 'data___uber_eats_link___id',
+  DataUberEatsLinkType = 'data___uber_eats_link___type',
+  DataUberEatsLinkTags = 'data___uber_eats_link___tags',
+  DataUberEatsLinkLang = 'data___uber_eats_link___lang',
+  DataUberEatsLinkSlug = 'data___uber_eats_link___slug',
+  DataUberEatsLinkUid = 'data___uber_eats_link___uid',
+  DataUberEatsLinkRaw = 'data___uber_eats_link___raw',
+  DataDoordashLinkLinkType = 'data___doordash_link___link_type',
+  DataDoordashLinkIsBroken = 'data___doordash_link___isBroken',
+  DataDoordashLinkUrl = 'data___doordash_link___url',
+  DataDoordashLinkTarget = 'data___doordash_link___target',
+  DataDoordashLinkSize = 'data___doordash_link___size',
+  DataDoordashLinkId = 'data___doordash_link___id',
+  DataDoordashLinkType = 'data___doordash_link___type',
+  DataDoordashLinkTags = 'data___doordash_link___tags',
+  DataDoordashLinkLang = 'data___doordash_link___lang',
+  DataDoordashLinkSlug = 'data___doordash_link___slug',
+  DataDoordashLinkUid = 'data___doordash_link___uid',
+  DataDoordashLinkRaw = 'data___doordash_link___raw',
+  DataMailingListSubscriptionLinkLinkType = 'data___mailing_list_subscription_link___link_type',
+  DataMailingListSubscriptionLinkIsBroken = 'data___mailing_list_subscription_link___isBroken',
+  DataMailingListSubscriptionLinkUrl = 'data___mailing_list_subscription_link___url',
+  DataMailingListSubscriptionLinkTarget = 'data___mailing_list_subscription_link___target',
+  DataMailingListSubscriptionLinkSize = 'data___mailing_list_subscription_link___size',
+  DataMailingListSubscriptionLinkId = 'data___mailing_list_subscription_link___id',
+  DataMailingListSubscriptionLinkType = 'data___mailing_list_subscription_link___type',
+  DataMailingListSubscriptionLinkTags = 'data___mailing_list_subscription_link___tags',
+  DataMailingListSubscriptionLinkLang = 'data___mailing_list_subscription_link___lang',
+  DataMailingListSubscriptionLinkSlug = 'data___mailing_list_subscription_link___slug',
+  DataMailingListSubscriptionLinkUid = 'data___mailing_list_subscription_link___uid',
+  DataMailingListSubscriptionLinkRaw = 'data___mailing_list_subscription_link___raw',
   DataRedirects = 'data___redirects',
   DataRedirectsFromPath = 'data___redirects___from_path',
   DataRedirectsToPath = 'data___redirects___to_path',
@@ -6180,7 +6227,7 @@ export enum SitePageFieldsEnum {
   PluginCreatorPluginOptionsRepositoryName = 'pluginCreator___pluginOptions___repositoryName',
   PluginCreatorPluginOptionsAccessToken = 'pluginCreator___pluginOptions___accessToken',
   PluginCreatorPluginOptionsFetchLinks = 'pluginCreator___pluginOptions___fetchLinks',
-  PluginCreatorPluginOptionsPrismicToolbar = 'pluginCreator___pluginOptions___prismicToolbar',
+  PluginCreatorPluginOptionsReleaseId = 'pluginCreator___pluginOptions___releaseID',
   PluginCreatorNodeApIs = 'pluginCreator___nodeAPIs',
   PluginCreatorBrowserApIs = 'pluginCreator___browserAPIs',
   PluginCreatorSsrApIs = 'pluginCreator___ssrAPIs',
@@ -6385,7 +6432,7 @@ export enum SitePluginFieldsEnum {
   PluginOptionsRepositoryName = 'pluginOptions___repositoryName',
   PluginOptionsAccessToken = 'pluginOptions___accessToken',
   PluginOptionsFetchLinks = 'pluginOptions___fetchLinks',
-  PluginOptionsPrismicToolbar = 'pluginOptions___prismicToolbar',
+  PluginOptionsReleaseId = 'pluginOptions___releaseID',
   NodeApIs = 'nodeAPIs',
   BrowserApIs = 'browserAPIs',
   SsrApIs = 'ssrAPIs',
@@ -6517,7 +6564,7 @@ export type SitePluginPluginOptions = {
   accessToken?: Maybe<Scalars['String']>;
   schemas?: Maybe<SitePluginPluginOptionsSchemas>;
   fetchLinks?: Maybe<Array<Maybe<Scalars['String']>>>;
-  prismicToolbar?: Maybe<Scalars['String']>;
+  releaseID?: Maybe<Scalars['String']>;
 };
 
 export type SitePluginPluginOptionsFilterInput = {
@@ -6539,7 +6586,7 @@ export type SitePluginPluginOptionsFilterInput = {
   accessToken?: Maybe<StringQueryOperatorInput>;
   schemas?: Maybe<SitePluginPluginOptionsSchemasFilterInput>;
   fetchLinks?: Maybe<StringQueryOperatorInput>;
-  prismicToolbar?: Maybe<StringQueryOperatorInput>;
+  releaseID?: Maybe<StringQueryOperatorInput>;
 };
 
 export type SitePluginPluginOptionsSchemas = {
@@ -7710,7 +7757,31 @@ export type SitePluginPluginOptionsSchemasSettingsMain = {
   facebook_handle?: Maybe<SitePluginPluginOptionsSchemasSettingsMainFacebook_Handle>;
   twitter_handle?: Maybe<SitePluginPluginOptionsSchemasSettingsMainTwitter_Handle>;
   instagram_handle?: Maybe<SitePluginPluginOptionsSchemasSettingsMainInstagram_Handle>;
+  footer_hours?: Maybe<SitePluginPluginOptionsSchemasSettingsMainFooter_Hours>;
   online_order_link?: Maybe<SitePluginPluginOptionsSchemasSettingsMainOnline_Order_Link>;
+  uber_eats_link?: Maybe<SitePluginPluginOptionsSchemasSettingsMainUber_Eats_Link>;
+  doordash_link?: Maybe<SitePluginPluginOptionsSchemasSettingsMainDoordash_Link>;
+  mailing_list_subscription_link?: Maybe<SitePluginPluginOptionsSchemasSettingsMainMailing_List_Subscription_Link>;
+};
+
+export type SitePluginPluginOptionsSchemasSettingsMainDoordash_Link = {
+  type?: Maybe<Scalars['String']>;
+  config?: Maybe<SitePluginPluginOptionsSchemasSettingsMainDoordash_LinkConfig>;
+};
+
+export type SitePluginPluginOptionsSchemasSettingsMainDoordash_LinkConfig = {
+  label?: Maybe<Scalars['String']>;
+  placeholder?: Maybe<Scalars['String']>;
+};
+
+export type SitePluginPluginOptionsSchemasSettingsMainDoordash_LinkConfigFilterInput = {
+  label?: Maybe<StringQueryOperatorInput>;
+  placeholder?: Maybe<StringQueryOperatorInput>;
+};
+
+export type SitePluginPluginOptionsSchemasSettingsMainDoordash_LinkFilterInput = {
+  type?: Maybe<StringQueryOperatorInput>;
+  config?: Maybe<SitePluginPluginOptionsSchemasSettingsMainDoordash_LinkConfigFilterInput>;
 };
 
 export type SitePluginPluginOptionsSchemasSettingsMainFacebook_Handle = {
@@ -7741,7 +7812,33 @@ export type SitePluginPluginOptionsSchemasSettingsMainFilterInput = {
   facebook_handle?: Maybe<SitePluginPluginOptionsSchemasSettingsMainFacebook_HandleFilterInput>;
   twitter_handle?: Maybe<SitePluginPluginOptionsSchemasSettingsMainTwitter_HandleFilterInput>;
   instagram_handle?: Maybe<SitePluginPluginOptionsSchemasSettingsMainInstagram_HandleFilterInput>;
+  footer_hours?: Maybe<SitePluginPluginOptionsSchemasSettingsMainFooter_HoursFilterInput>;
   online_order_link?: Maybe<SitePluginPluginOptionsSchemasSettingsMainOnline_Order_LinkFilterInput>;
+  uber_eats_link?: Maybe<SitePluginPluginOptionsSchemasSettingsMainUber_Eats_LinkFilterInput>;
+  doordash_link?: Maybe<SitePluginPluginOptionsSchemasSettingsMainDoordash_LinkFilterInput>;
+  mailing_list_subscription_link?: Maybe<SitePluginPluginOptionsSchemasSettingsMainMailing_List_Subscription_LinkFilterInput>;
+};
+
+export type SitePluginPluginOptionsSchemasSettingsMainFooter_Hours = {
+  type?: Maybe<Scalars['String']>;
+  config?: Maybe<SitePluginPluginOptionsSchemasSettingsMainFooter_HoursConfig>;
+};
+
+export type SitePluginPluginOptionsSchemasSettingsMainFooter_HoursConfig = {
+  single?: Maybe<Scalars['String']>;
+  label?: Maybe<Scalars['String']>;
+  placeholder?: Maybe<Scalars['String']>;
+};
+
+export type SitePluginPluginOptionsSchemasSettingsMainFooter_HoursConfigFilterInput = {
+  single?: Maybe<StringQueryOperatorInput>;
+  label?: Maybe<StringQueryOperatorInput>;
+  placeholder?: Maybe<StringQueryOperatorInput>;
+};
+
+export type SitePluginPluginOptionsSchemasSettingsMainFooter_HoursFilterInput = {
+  type?: Maybe<StringQueryOperatorInput>;
+  config?: Maybe<SitePluginPluginOptionsSchemasSettingsMainFooter_HoursConfigFilterInput>;
 };
 
 export type SitePluginPluginOptionsSchemasSettingsMainInstagram_Handle = {
@@ -7762,6 +7859,26 @@ export type SitePluginPluginOptionsSchemasSettingsMainInstagram_HandleConfigFilt
 export type SitePluginPluginOptionsSchemasSettingsMainInstagram_HandleFilterInput = {
   type?: Maybe<StringQueryOperatorInput>;
   config?: Maybe<SitePluginPluginOptionsSchemasSettingsMainInstagram_HandleConfigFilterInput>;
+};
+
+export type SitePluginPluginOptionsSchemasSettingsMainMailing_List_Subscription_Link = {
+  type?: Maybe<Scalars['String']>;
+  config?: Maybe<SitePluginPluginOptionsSchemasSettingsMainMailing_List_Subscription_LinkConfig>;
+};
+
+export type SitePluginPluginOptionsSchemasSettingsMainMailing_List_Subscription_LinkConfig = {
+  label?: Maybe<Scalars['String']>;
+  placeholder?: Maybe<Scalars['String']>;
+};
+
+export type SitePluginPluginOptionsSchemasSettingsMainMailing_List_Subscription_LinkConfigFilterInput = {
+  label?: Maybe<StringQueryOperatorInput>;
+  placeholder?: Maybe<StringQueryOperatorInput>;
+};
+
+export type SitePluginPluginOptionsSchemasSettingsMainMailing_List_Subscription_LinkFilterInput = {
+  type?: Maybe<StringQueryOperatorInput>;
+  config?: Maybe<SitePluginPluginOptionsSchemasSettingsMainMailing_List_Subscription_LinkConfigFilterInput>;
 };
 
 export type SitePluginPluginOptionsSchemasSettingsMainOnline_Order_Link = {
@@ -7882,6 +7999,26 @@ export type SitePluginPluginOptionsSchemasSettingsMainTwitter_HandleConfigFilter
 export type SitePluginPluginOptionsSchemasSettingsMainTwitter_HandleFilterInput = {
   type?: Maybe<StringQueryOperatorInput>;
   config?: Maybe<SitePluginPluginOptionsSchemasSettingsMainTwitter_HandleConfigFilterInput>;
+};
+
+export type SitePluginPluginOptionsSchemasSettingsMainUber_Eats_Link = {
+  type?: Maybe<Scalars['String']>;
+  config?: Maybe<SitePluginPluginOptionsSchemasSettingsMainUber_Eats_LinkConfig>;
+};
+
+export type SitePluginPluginOptionsSchemasSettingsMainUber_Eats_LinkConfig = {
+  label?: Maybe<Scalars['String']>;
+  placeholder?: Maybe<Scalars['String']>;
+};
+
+export type SitePluginPluginOptionsSchemasSettingsMainUber_Eats_LinkConfigFilterInput = {
+  label?: Maybe<StringQueryOperatorInput>;
+  placeholder?: Maybe<StringQueryOperatorInput>;
+};
+
+export type SitePluginPluginOptionsSchemasSettingsMainUber_Eats_LinkFilterInput = {
+  type?: Maybe<StringQueryOperatorInput>;
+  config?: Maybe<SitePluginPluginOptionsSchemasSettingsMainUber_Eats_LinkConfigFilterInput>;
 };
 
 export type SitePluginPluginOptionsSchemasSettingsRedirects = {
@@ -8121,7 +8258,7 @@ export type UseNavigationQuery = { header?: Maybe<{ data?: Maybe<{ main?: Maybe<
 export type PrismicSiteSettingsQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type PrismicSiteSettingsQuery = { prismicSettings?: Maybe<{ data?: Maybe<{ site_name?: Maybe<Pick<PrismicStructuredTextType, 'text'>>, site_description?: Maybe<Pick<PrismicStructuredTextType, 'text'>>, site_copyright?: Maybe<Pick<PrismicStructuredTextType, 'text'>>, facebook_handle?: Maybe<Pick<PrismicStructuredTextType, 'text'>>, twitter_handle?: Maybe<Pick<PrismicStructuredTextType, 'text'>>, instagram_handle?: Maybe<Pick<PrismicStructuredTextType, 'text'>>, online_order_link?: Maybe<Pick<PrismicLinkType, 'url'>> }> }> };
+export type PrismicSiteSettingsQuery = { prismicSettings?: Maybe<{ data?: Maybe<{ site_name?: Maybe<Pick<PrismicStructuredTextType, 'text'>>, site_description?: Maybe<Pick<PrismicStructuredTextType, 'text'>>, site_copyright?: Maybe<Pick<PrismicStructuredTextType, 'text'>>, facebook_handle?: Maybe<Pick<PrismicStructuredTextType, 'text'>>, twitter_handle?: Maybe<Pick<PrismicStructuredTextType, 'text'>>, instagram_handle?: Maybe<Pick<PrismicStructuredTextType, 'text'>>, footer_hours?: Maybe<Pick<PrismicStructuredTextType, 'text'>>, online_order_link?: Maybe<Pick<PrismicLinkType, 'url'>>, uber_eats_link?: Maybe<Pick<PrismicLinkType, 'url'>>, doordash_link?: Maybe<Pick<PrismicLinkType, 'url'>>, mailing_list_subscription_link?: Maybe<Pick<PrismicLinkType, 'url'>> }> }> };
 
 export type NotFoundPageQueryVariables = Exact<{ [key: string]: never; }>;
 

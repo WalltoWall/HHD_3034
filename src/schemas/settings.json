@@ -49,11 +49,40 @@
         "label": "Instagram Handle"
       }
     },
+    "footer_hours": {
+      "type": "StructuredText",
+      "config": {
+        "single": "paragraph",
+        "label": "Footer Hours",
+        "placeholder": "Short list of hours displayed in the footer"
+      }
+    },
     "online_order_link": {
       "type": "Link",
       "config": {
         "label": "Online Order Link",
         "placeholder": "Link to order online"
+      }
+    },
+    "uber_eats_link": {
+      "type": "Link",
+      "config": {
+        "label": "Uber Eats Link",
+        "placeholder": "Link to order via Uber Eats"
+      }
+    },
+    "doordash_link": {
+      "type": "Link",
+      "config": {
+        "label": "DoorDash Link",
+        "placeholder": "Link to order via DoorDash"
+      }
+    },
+    "mailing_list_subscription_link": {
+      "type": "Link",
+      "config": {
+        "label": "Mailing List Subscription Link",
+        "placeholder": "Link to subscribe to the mailing list"
       }
     }
   },
