@@ -12,6 +12,7 @@ import {
 import { MapDataToPropsArgs } from '../types'
 import { PageTemplateEnhancerProps } from '../templates/page'
 
+import { Inline } from '../components/Inline'
 import { BoundedBox } from '../components/BoundedBox'
 import { HTMLContent } from '../components/HTMLContent'
 import { Heading } from '../components/Heading'
@@ -23,6 +24,7 @@ import AssetVideoCookingChannel from '../assets/video-cooking-channel.mp4'
 import AssetPosterCookingChannel from '../assets/poster-cooking-channel.jpg'
 
 import * as styleRefs from './PageBodyAboutHankS.treat'
+import { FramedImage } from '../components/FramedImage'
 
 const useQueryData = () =>
   useStaticQuery<PageBodyAboutHankSAssetsQuery>(graphql`
@@ -65,7 +67,10 @@ const PageBodyAboutHankS = ({
       styles={{ color: 'gray30' }}
     >
       <Box styles={{ display: 'flex', alignItems: 'start' }}>
-        <Box
+        <Inline
+          direction="column"
+          space={14}
+          wrap={false}
           styles={{
             display: ['none', 'block'],
             width: '4.5/12',
@@ -74,12 +79,17 @@ const PageBodyAboutHankS = ({
           }}
         >
           {sideImages.map(
-            (image) =>
+            (image, i) =>
               image.fluid && (
-                <GatsbyImage fluid={image.fluid} alt={image.alt} />
+                <FramedImage
+                  key={i}
+                  fluid={image.fluid}
+                  alt={image.alt}
+                  tilt={i % 2 ? 'right' : 'left'}
+                />
               ),
           )}
-        </Box>
+        </Inline>
         <Box
           className={clsx(
             styleRefs.backgroundTextureRedPaper,

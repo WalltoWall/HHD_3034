@@ -6222,12 +6222,11 @@ export enum SitePageFieldsEnum {
   PluginCreatorPluginOptionsLegacy = 'pluginCreator___pluginOptions___legacy',
   PluginCreatorPluginOptionsThemeColorInHead = 'pluginCreator___pluginOptions___theme_color_in_head',
   PluginCreatorPluginOptionsCacheDigest = 'pluginCreator___pluginOptions___cacheDigest',
-  PluginCreatorPluginOptionsPath = 'pluginCreator___pluginOptions___path',
-  PluginCreatorPluginOptionsPathCheck = 'pluginCreator___pluginOptions___pathCheck',
   PluginCreatorPluginOptionsRepositoryName = 'pluginCreator___pluginOptions___repositoryName',
   PluginCreatorPluginOptionsAccessToken = 'pluginCreator___pluginOptions___accessToken',
   PluginCreatorPluginOptionsFetchLinks = 'pluginCreator___pluginOptions___fetchLinks',
-  PluginCreatorPluginOptionsReleaseId = 'pluginCreator___pluginOptions___releaseID',
+  PluginCreatorPluginOptionsPath = 'pluginCreator___pluginOptions___path',
+  PluginCreatorPluginOptionsPathCheck = 'pluginCreator___pluginOptions___pathCheck',
   PluginCreatorNodeApIs = 'pluginCreator___nodeAPIs',
   PluginCreatorBrowserApIs = 'pluginCreator___browserAPIs',
   PluginCreatorSsrApIs = 'pluginCreator___ssrAPIs',
@@ -6427,12 +6426,11 @@ export enum SitePluginFieldsEnum {
   PluginOptionsLegacy = 'pluginOptions___legacy',
   PluginOptionsThemeColorInHead = 'pluginOptions___theme_color_in_head',
   PluginOptionsCacheDigest = 'pluginOptions___cacheDigest',
-  PluginOptionsPath = 'pluginOptions___path',
-  PluginOptionsPathCheck = 'pluginOptions___pathCheck',
   PluginOptionsRepositoryName = 'pluginOptions___repositoryName',
   PluginOptionsAccessToken = 'pluginOptions___accessToken',
   PluginOptionsFetchLinks = 'pluginOptions___fetchLinks',
-  PluginOptionsReleaseId = 'pluginOptions___releaseID',
+  PluginOptionsPath = 'pluginOptions___path',
+  PluginOptionsPathCheck = 'pluginOptions___pathCheck',
   NodeApIs = 'nodeAPIs',
   BrowserApIs = 'browserAPIs',
   SsrApIs = 'ssrAPIs',
@@ -6558,13 +6556,12 @@ export type SitePluginPluginOptions = {
   legacy?: Maybe<Scalars['Boolean']>;
   theme_color_in_head?: Maybe<Scalars['Boolean']>;
   cacheDigest?: Maybe<Scalars['String']>;
-  path?: Maybe<Scalars['String']>;
-  pathCheck?: Maybe<Scalars['Boolean']>;
   repositoryName?: Maybe<Scalars['String']>;
   accessToken?: Maybe<Scalars['String']>;
   schemas?: Maybe<SitePluginPluginOptionsSchemas>;
   fetchLinks?: Maybe<Array<Maybe<Scalars['String']>>>;
-  releaseID?: Maybe<Scalars['String']>;
+  path?: Maybe<Scalars['String']>;
+  pathCheck?: Maybe<Scalars['Boolean']>;
 };
 
 export type SitePluginPluginOptionsFilterInput = {
@@ -6580,13 +6577,12 @@ export type SitePluginPluginOptionsFilterInput = {
   legacy?: Maybe<BooleanQueryOperatorInput>;
   theme_color_in_head?: Maybe<BooleanQueryOperatorInput>;
   cacheDigest?: Maybe<StringQueryOperatorInput>;
-  path?: Maybe<StringQueryOperatorInput>;
-  pathCheck?: Maybe<BooleanQueryOperatorInput>;
   repositoryName?: Maybe<StringQueryOperatorInput>;
   accessToken?: Maybe<StringQueryOperatorInput>;
   schemas?: Maybe<SitePluginPluginOptionsSchemasFilterInput>;
   fetchLinks?: Maybe<StringQueryOperatorInput>;
-  releaseID?: Maybe<StringQueryOperatorInput>;
+  path?: Maybe<StringQueryOperatorInput>;
+  pathCheck?: Maybe<BooleanQueryOperatorInput>;
 };
 
 export type SitePluginPluginOptionsSchemas = {
@@ -8225,6 +8221,11 @@ export type GatsbyPrismicImageFluid_WithWebpFragment = Pick<PrismicImageFluidTyp
 
 export type GatsbyPrismicImageFluid_WithWebp_NoBase64Fragment = Pick<PrismicImageFluidType, 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
 
+export type FramedImageQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type FramedImageQuery = { frame1?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<GatsbyImageSharpFluid_WithWebp_NoBase64Fragment> }> }>, frame2?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<GatsbyImageSharpFluid_WithWebp_NoBase64Fragment> }> }>, frame3?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<GatsbyImageSharpFluid_WithWebp_NoBase64Fragment> }> }> };
+
 export type PrismicPageParentRecursiveFragment = (
   { data?: Maybe<{ parent?: Maybe<{ document?: Maybe<(
         { data?: Maybe<{ parent?: Maybe<{ document?: Maybe<(
@@ -8312,7 +8313,7 @@ export type SlicesPageBodyFragment = SlicesPageBody_PrismicPageBodyDogSlideshow_
 export type PageBodyAboutHankSAssetsQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type PageBodyAboutHankSAssetsQuery = { backBoard?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<GatsbyImageSharpFluid_WithWebp_NoBase64Fragment> }> }>, clip?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<GatsbyImageSharpFluid_WithWebp_NoBase64Fragment> }> }> };
+export type PageBodyAboutHankSAssetsQuery = { backBoard?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<GatsbyImageSharpFluid_WithWebp_NoBase64Fragment> }> }>, clip?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<GatsbyImageSharpFluid_WithWebp_NoBase64Fragment> }> }>, frame1?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<GatsbyImageSharpFluid_WithWebp_NoBase64Fragment> }> }>, frame2?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<GatsbyImageSharpFluid_WithWebp_NoBase64Fragment> }> }>, frame3?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<GatsbyImageSharpFluid_WithWebp_NoBase64Fragment> }> }> };
 
 export type PageBodyAboutHankSFragment = { primary?: Maybe<{ text?: Maybe<Pick<PrismicStructuredTextType, 'text' | 'html'>> }>, items?: Maybe<Array<Maybe<{ side_image?: Maybe<(
       Pick<PrismicImageType, 'alt'>

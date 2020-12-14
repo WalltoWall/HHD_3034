@@ -13,3 +13,11 @@ export const transformClipsUp = style({
 export const paperShadow = style({
   boxShadow: '0 4px 12px rgba(66,49,50,.8), 0 1px 4px rgba(66,49,50,.5)',
 })
+
+export const tiltRight = style({
+  transform: 'rotate(4deg)',
+})
+
+export const tiltLeft = style({
+  transform: 'rotate(-4deg)',
+})
