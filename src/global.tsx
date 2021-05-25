@@ -14,7 +14,7 @@
 
 import 'minireset.css'
 import '@reach/skip-nav/styles.css'
-import '@walltowall/siamese/dist/siamese.cjs.development.css'
+import '@walltowall/siamese/dist/siamese.css'
 import 'typeface-inter'
 
 import './index.css'

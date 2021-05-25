@@ -124,12 +124,12 @@ const PageBodyHeader = ({ nextSharesBg, location }: PageBodyHeaderProps) => {
             styles={{
               width: ['10rem', '5/12'],
               flexShrink: 0,
-              marginBottom: [2, 0],
+              marginBottom: [2, 19],
               marginRight: [0, 12],
             }}
           >
             <Link href="/">
-              <GatsbyImage fluid={imageFluid} alt="Hank's Haute Dogs" />
+              <GatsbyImage fluid={imageFluid} alt="Hank's Hawaii" />
             </Link>
           </Box>
         )}
